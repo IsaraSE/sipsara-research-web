@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="public/images/logo.png" alt="Sipsara Logo" width="120" />
+  <img src="images/logo.png" alt="Sipsara Logo" width="120" />
 
   <h1>Sipsara Research Website</h1>
   <p><strong>Learning Signals, Made Meaningful.</strong></p>
@@ -27,9 +27,9 @@ The research investigates how behavioral telemetry, speech analysis, and AI-driv
 
 ## 🚀 Tech Stack
 
-- **Framework:** [React 19](https://react.dev/)
-- **Build Tool:** [Vite](https://vitejs.dev/)
+- **Markup:** HTML5
 - **Styling:** Vanilla CSS (CSS Variables, Flexbox/Grid, Animations)
+- **Interactivity:** Vanilla JavaScript (Intersection Observer, DOM Manipulation)
 - **Typography:** Inter & Space Grotesk (Google Fonts)
 
 ## 🛠️ Local Development
@@ -42,31 +42,23 @@ git clone https://github.com/IsaraSE/sipsara-research-web.git
 cd sipsara-research-web
 ```
 
-### 2. Install dependencies
-```bash
-npm install
-```
+### 2. View the website
+Simply open the `index.html` file in your preferred web browser. Alternatively, if you have a local server installed (like Live Server or Python's HTTP server), you can serve the directory.
 
-### 3. Start the development server
 ```bash
-npm run dev
+# Example using Python:
+python -m http.server 8000
 ```
-
-The application will launch on your local host (typically `http://localhost:5173/`).
+Then visit `http://localhost:8000/`.
 
 ## 📁 Project Structure
 
 ```text
 📦 sipsara-research-web
- ┣ 📂 public               # Static assets (Favicon, Logo, Hero Image)
- ┣ 📂 src                  
- ┃ ┣ 📜 App.jsx            # Main React component (All sections & logic)
- ┃ ┣ 📜 App.css            # Component-specific styles & animations
- ┃ ┣ 📜 index.css          # Global design tokens and resets
- ┃ ┗ 📜 main.jsx           # React DOM entry point
- ┣ 📜 index.html           # Main HTML template
- ┣ 📜 package.json         # Project dependencies & scripts
- ┗ 📜 vite.config.js       # Vite configuration
+ ┣ 📂 images               # Static assets (Favicon, Logo, Hero Image, Team Photos)
+ ┣ 📜 index.html           # Main HTML template (All sections & logic)
+ ┣ 📜 style.css            # Global design tokens and component styles
+ ┗ 📜 README.md            # Project documentation
 ```
 
 ## 👨‍💻 Research Team
