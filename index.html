@@ -1,21 +1,829 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/png" href="./favicon.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#0a0e1a" />
-    <meta name="description" content="Sipsara — An AI-assisted adaptive Sinhala learning research ecosystem for Grade 1 children. Combining behavioral telemetry, speech intelligence, explainable AI and personalized tutoring." />
-    <meta property="og:title" content="Sipsara Research — Learning signals, made meaningful" />
-    <meta property="og:description" content="Adaptive Sinhala learning research combining behavioral telemetry, speech intelligence, explainable AI and personalized tutoring for early learners." />
-    <meta property="og:image" content="./images/hero.jpg" />
-    <title>Sipsara Research — AI-Assisted Adaptive Learning</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sipsara Research Initiative</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="site-shell">
+    <!-- HEADER -->
+    <header class="site-header" id="site-header">
+      <a class="brand" href="#hero" onclick="event.preventDefault(); jumpTo('hero')">
+        <img src="./images/logo.png" alt="Sipsara Logo" class="brand-logo" />
+        <span>
+          <b>Sipsara</b>
+          <small>Research Initiative</small>
+        </span>
+      </a>
+      <nav class="nav-links" id="nav-links" aria-label="Primary navigation">
+        <a href="#hero" id="nav-hero" onclick="event.preventDefault(); jumpTo('hero')">Home</a>
+        <a href="#domain" id="nav-domain" onclick="event.preventDefault(); jumpTo('domain')">Domain</a>
+        <a href="#milestones" id="nav-milestones" onclick="event.preventDefault(); jumpTo('milestones')">Milestones</a>
+        <a href="#documents" id="nav-documents" onclick="event.preventDefault(); jumpTo('documents')">Documents</a>
+        <a href="#presentations" id="nav-presentations" onclick="event.preventDefault(); jumpTo('presentations')">Presentations</a>
+        <a href="#team" id="nav-team" onclick="event.preventDefault(); jumpTo('team')">About us</a>
+        <a href="#contact" id="nav-contact" onclick="event.preventDefault(); jumpTo('contact')">Contact us</a>
+      </nav>
+      <button class="header-cta" onclick="jumpTo('documents')">
+        Research Library 
+        <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11M11 5l5 5-5 5" /></svg>
+      </button>
+      <button class="menu-toggle" aria-label="Toggle navigation" onclick="toggleMenu()">
+        <span></span><span></span>
+      </button>
+    </header>
+
+    <main>
+      <!-- HERO -->
+      <section class="hero" id="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-grid-overlay"></div>
+        <div class="hero-content">
+          <div class="hero-kicker">
+            <span class="live-dot"></span>
+            Undergraduate Research · SLIIT
+          </div>
+          <h1>
+            Learning Signals,<br />
+            <em>Made Meaningful.</em>
+          </h1>
+          <p class="hero-lead">
+            An AI-assisted, adaptive Sinhala learning ecosystem that turns everyday play into
+            clearer learning support for Grade 1 children.
+          </p>
+          <div class="hero-actions">
+            <button class="btn-primary" onclick="jumpTo('domain')">
+              Explore the Research 
+              <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11M11 5l5 5-5 5" /></svg>
+            </button>
+            <button class="btn-ghost" onclick="jumpTo('team')">
+              Meet the Team
+            </button>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img src="./images/hero.jpg" alt="Child learning with AI" />
+        </div>
+        <div class="hero-metrics">
+          <div><span>Research Focus</span><b>AI × Early Learning</b></div>
+          <div><span>Primary Language</span><b>Sinhala</b></div>
+          <div><span>Target Audience</span><b>Age 6–7 (Grade 1)</b></div>
+          <div><span>Components</span><b>4 Integrated Systems</b></div>
+        </div>
+      </section>
+
+      <!-- THESIS STRIP -->
+      <section class="thesis-strip">
+        <div class="thesis-inner">
+          <p class="thesis-sub">Our Research Question</p>
+          <h2>
+            Can a learning experience notice when a child needs support — 
+            <em>without making learning feel like a test?</em>
+          </h2>
+          <div class="strip-metrics">
+            <div><b>04</b><span>Integrated research components</span></div>
+            <div><b>10</b><span>Learning skill families</span></div>
+            <div><b>1000</b><span>Progressive activity rounds</span></div>
+            <div><b>02</b><span>Stakeholder dashboards</span></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- DOMAIN: RESEARCH PROBLEMS -->
+      <section class="domain-section section-pad" id="domain">
+        <div class="section-inner">
+          <div class="section-intro reveal">
+            <p class="eyebrow">Research Problem</p>
+            <h2>Challenges in <em>early learning support.</em></h2>
+            <p class="section-copy">Current AI tools are specialized and isolated. An integrated system combining behavioral telemetry, speech analysis, and adaptive learning in Sinhala remains an open challenge.</p>
+          </div>
+          <div class="domain-grid">
+            <article class="domain-card reveal" style="transition-delay: 0s">
+              <p class="card-label">01. Fragmentation</p>
+              <h3>Fragmented Learning Tools</h3>
+              <p>Current Sinhala learning tools are specialized and isolated, requiring parents to switch between multiple platforms. An integrated, unified system that delivers adaptive learning support in a single environment is missing.</p>
+            </article>
+            <article class="domain-card reveal" style="transition-delay: 0.1s">
+              <p class="card-label">02. Observation</p>
+              <h3>Limited Learning Observation</h3>
+              <p>Conventional assessments capture only final answers. Digital learning can also reveal the process — hesitation, correction, effort, speech and progress over time — yet most tools ignore these behavioral signals.</p>
+            </article>
+            <article class="domain-card reveal" style="transition-delay: 0.2s">
+              <p class="card-label">03. Adaptation</p>
+              <h3>Static Learning Paths</h3>
+              <p>Existing educational apps use one-size-fits-all content. Personalized, adaptive difficulty adjustment based on real-time behavioral telemetry and mastery state is still missing in Sinhala-first platforms.</p>
+            </article>
+            <article class="domain-card reveal" style="transition-delay: 0.3s">
+              <p class="card-label">04. Explainability</p>
+              <h3>Opaque Model Decisions</h3>
+              <p>Few child learning systems explain their analytical decisions. Parents and specialists need transparent, interpretable summaries of how the system assesses a child's learning patterns.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- RESEARCH GAP -->
+      <section class="gap-section section-pad">
+        <div class="section-inner">
+          <div class="section-intro reveal">
+            <p class="eyebrow">Research Gap</p>
+            <h2>Where current systems <em>fall short.</em></h2>
+            <p class="section-copy">Few child-friendly systems combine Sinhala learning content, behavioral telemetry, speech evidence and real-time adaptation in one coherent workflow.</p>
+          </div>
+          <div class="gap-grid">
+            <article class="gap-card reveal" style="transition-delay: 0s">
+              <div class="gap-icon">🔬</div>
+              <h3>Local Language Gap</h3>
+              <p>Few AI-driven systems combine Sinhala learning content with behavioral telemetry, speech evidence, and real-time adaptation in one coherent workflow.</p>
+            </article>
+            <article class="gap-card reveal" style="transition-delay: 0.1s">
+              <div class="gap-icon">🧠</div>
+              <h3>Multimodal Evidence Gap</h3>
+              <p>Most systems analyze either behavioral or speech data independently. Fusing interaction patterns, voice analysis, and learning progression into interpretable signals remains underexplored.</p>
+            </article>
+            <article class="gap-card reveal" style="transition-delay: 0.2s">
+              <div class="gap-icon">🎮</div>
+              <h3>Engagement Gap</h3>
+              <p>Clinical assessment interrupts natural learning. A gamified experience that gathers evidence through joyful play while surfacing meaningful indicators is a key unmet need.</p>
+            </article>
+            <article class="gap-card reveal" style="transition-delay: 0.3s">
+              <div class="gap-icon">📊</div>
+              <h3>Stakeholder Communication Gap</h3>
+              <p>Parents and specialists have different information needs. Systems rarely provide role-appropriate, transparent summaries with model attribution and confidence levels.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- RESEARCH OBJECTIVES -->
+      <section class="objectives-section section-pad">
+        <div class="section-inner">
+          <div class="section-intro reveal">
+            <p class="eyebrow">Research Objectives</p>
+            <h2>Four objectives <em>guide the work.</em></h2>
+            <p class="section-copy">Each objective addresses a distinct facet of the research question, from engaging young learners to communicating transparent insights.</p>
+          </div>
+          <div class="objectives-grid">
+            <div class="obj-card reveal" style="transition-delay: 0s">
+              <div class="obj-marker">01</div>
+              <div class="obj-body">
+                <h3>Engage through adaptive play</h3>
+                <p>Design focused, developmentally appropriate Sinhala activities with progressive difficulty for Grade 1 learners aged 6–7.</p>
+              </div>
+            </div>
+            <div class="obj-card reveal" style="transition-delay: 0.12s">
+              <div class="obj-marker">02</div>
+              <div class="obj-body">
+                <h3>Capture multimodal signals</h3>
+                <p>Study voice patterns, response timing, interaction behaviors and learning progression across repeated sessions to build rich learner profiles.</p>
+              </div>
+            </div>
+            <div class="obj-card reveal" style="transition-delay: 0.24s">
+              <div class="obj-marker">03</div>
+              <div class="obj-body">
+                <h3>Fuse and explain patterns</h3>
+                <p>Combine behavioral and speech features into interpretable learner-risk signals using XGBoost with SHAP-based feature attribution.</p>
+              </div>
+            </div>
+            <div class="obj-card reveal" style="transition-delay: 0.36s">
+              <div class="obj-marker">04</div>
+              <div class="obj-body">
+                <h3>Adapt and communicate</h3>
+                <p>Adjust task difficulty using item-response modelling and present clear, role-appropriate progress insights to parents and specialists.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- METHODOLOGY / COMPONENTS -->
+      <section class="components-section section-pad">
+        <div class="section-inner">
+          <div class="section-intro reveal">
+            <p class="eyebrow">Methodology</p>
+            <h2>One Ecosystem. <em>Four lenses.</em></h2>
+            <p class="section-copy">Each component answers a different part of the research question. Together they create a continuous path from interaction to interpretable support.</p>
+          </div>
+          <div class="pipeline reveal">
+            <div class="pipeline-item"><div class="pipe-num">01</div><b>Experience</b><p>Flutter learning activities</p></div>
+            <div class="pipeline-item"><div class="pipe-num">02</div><b>Capture</b><p>Voice + interaction telemetry</p></div>
+            <div class="pipeline-item"><div class="pipe-num">03</div><b>Model</b><p>C1–C4 analytical services</p></div>
+            <div class="pipeline-item"><div class="pipe-num">04</div><b>Respond</b><p>Adaptive task selection</p></div>
+            <div class="pipeline-item"><div class="pipe-num">05</div><b>Communicate</b><p>Parent + specialist insight</p></div>
+          </div>
+
+          <div class="component-grid">
+            <article class="component-card coral reveal" style="transition-delay: 0s">
+              <div class="component-top"><span>C1</span></div>
+              <p class="component-label">Interaction Intelligence</p>
+              <h3>Behavioral Telemetry</h3>
+              <p>Captures response latency, first-attempt accuracy, retries, hesitation, touch patterns and fatigue proxies during natural play.</p>
+              <div class="tag-row"><span>Learning Analytics</span><span>Fatigue Proxy</span><span>Telemetry</span></div>
+            </article>
+            <article class="component-card jade reveal" style="transition-delay: 0.1s">
+              <div class="component-top"><span>C2</span></div>
+              <p class="component-label">Voice & Fluency</p>
+              <h3>Sinhala Speech Monitoring</h3>
+              <p>Studies speech timing, pauses, voice onset, word error rate and acoustic quality across guided Sinhala reading tasks.</p>
+              <div class="tag-row"><span>Speech-to-Text</span><span>Acoustics</span><span>Fluency</span></div>
+            </article>
+            <article class="component-card gold reveal" style="transition-delay: 0.2s">
+              <div class="component-top"><span>C3</span></div>
+              <p class="component-label">Multimodal Analysis</p>
+              <h3>Explainable Pattern Fusion</h3>
+              <p>Combines behavioral and speech features into interpretable learner-pattern signals, with SHAP-based feature attribution.</p>
+              <div class="tag-row"><span>XGBoost</span><span>SHAP</span><span>Explainable AI</span></div>
+            </article>
+            <article class="component-card blue reveal" style="transition-delay: 0.3s">
+              <div class="component-top"><span>C4</span></div>
+              <p class="component-label">Personalized Progression</p>
+              <h3>Adaptive Tutoring Engine</h3>
+              <p>Uses item-response modelling and mastery state to select the next task, adjust challenge and introduce scaffolds when needed.</p>
+              <div class="tag-row"><span>Rasch / IRT</span><span>Mastery</span><span>Scaffolding</span></div>
+            </article>
+          </div>
+
+          <div class="method-detail-grid" style="margin-top: clamp(32px, 4vw, 48px)">
+            <article class="architecture-card reveal">
+              <p class="mini-kicker">System Architecture</p>
+              <h3>Built as connected, testable services.</h3>
+              <div class="architecture-layers">
+                <div><span>Experience</span><b>Flutter · Dart</b><i>Gamified mobile interface</i></div>
+                <div><span>API & Data</span><b>FastAPI · MongoDB</b><i>Secure role-based services</i></div>
+                <div><span>Intelligence</span><b>Python · ML Pipeline</b><i>Speech, fusion & adaptation</i></div>
+                <div><span>Cloud</span><b>Azure-ready</b><i>Deployment and monitoring</i></div>
+              </div>
+            </article>
+            <article class="principles-card reveal delay-1">
+              <p class="mini-kicker">Design Principles</p>
+              <h3>Human-centered by design.</h3>
+              <ul>
+                <li><span>01</span><div><b>Progress before labels</b><p>Communicate strengths, needs and change over time.</p></div></li>
+                <li><span>02</span><div><b>Explain the signal</b><p>Expose contributing features and model limitations.</p></div></li>
+                <li><span>03</span><div><b>Minimize the burden</b><p>Gather evidence through normal learning interactions.</p></div></li>
+                <li><span>04</span><div><b>Separate the audiences</b><p>Parents and specialists see role-appropriate information.</p></div></li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- LITERATURE SURVEY -->
+      <section class="literature-section section-pad">
+        <div class="section-inner">
+          <div class="section-intro reveal">
+            <p class="eyebrow">Literature Survey</p>
+            <h2>Building on <em>existing knowledge.</em></h2>
+            <p class="section-copy">A synthesis of prior work in educational data mining, adaptive learning, speech analysis and explainable AI for child learning support.</p>
+          </div>
+          <div class="literature-content reveal">
+            <p>The field of early learning support has seen growing adoption of AI and behavioral analytics. Initial efforts utilized static assessment tools that evaluated only final answers, missing the rich process data generated during learning interactions.</p>
+            <p>With advances in deep learning and natural language processing, newer systems have begun analyzing speech patterns, interaction timing, and behavioral signals. Transfer learning and multimodal fusion have shown promise for building comprehensive learner profiles, though challenges remain for low-resource languages like Sinhala.</p>
+            <p>For speech monitoring, systems have employed voice onset time analysis, pause detection, and word error rate measurement. Behavioral telemetry approaches capture response latency, retry patterns, hesitation signals, and fatigue proxies during natural interaction.</p>
+            <p>Adaptive learning engines using item-response theory (IRT) and mastery-based progression have demonstrated effectiveness in personalizing difficulty levels. Explainable AI techniques such as SHAP (SHapley Additive exPlanations) enable transparent model decisions, critical for stakeholder trust in educational contexts.</p>
+            <div class="lit-refs">
+              <h4>Key References</h4>
+              <ol>
+                <li>R. Baker and P. S. Inventado, "Educational Data Mining and Learning Analytics," in Learning Analytics, Springer, 2014.</li>
+                <li>C. Romero and S. Ventura, "Data Mining in Education," WIREs Data Mining and Knowledge Discovery, 2013.</li>
+                <li>T. Anderson et al., "Learning Analytics and Educational Data Mining," IRRODL, 2014.</li>
+                <li>D. Rasch, "Probabilistic Models for Intelligence and Attainment Tests," University of Chicago Press, 1960.</li>
+                <li>S. Lundberg and S. Lee, "A Unified Approach to Interpreting Model Predictions," NeurIPS, 2017.</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TECHNOLOGIES -->
+      <section class="tech-section section-pad">
+        <div class="section-inner">
+          <div class="section-intro reveal">
+            <p class="eyebrow">Technologies Used</p>
+            <h2>Powered by <em>modern tools.</em></h2>
+          </div>
+          <div class="tech-grid">
+            <div class="tech-item reveal" style="transition-delay: 0s"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" loading="lazy" /><span>Python</span></div>
+            <div class="tech-item reveal" style="transition-delay: 0.05s"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" alt="Flutter" loading="lazy" /><span>Flutter</span></div>
+            <div class="tech-item reveal" style="transition-delay: 0.1s"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" alt="FastAPI" loading="lazy" /><span>FastAPI</span></div>
+            <div class="tech-item reveal" style="transition-delay: 0.15s"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB" loading="lazy" /><span>MongoDB</span></div>
+            <div class="tech-item reveal" style="transition-delay: 0.2s"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" alt="TensorFlow" loading="lazy" /><span>TensorFlow</span></div>
+            <div class="tech-item reveal" style="transition-delay: 0.25s"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" loading="lazy" /><span>React</span></div>
+            <div class="tech-item reveal" style="transition-delay: 0.3s"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" alt="Firebase" loading="lazy" /><span>Firebase</span></div>
+            <div class="tech-item reveal" style="transition-delay: 0.35s"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg" alt="Azure" loading="lazy" /><span>Azure</span></div>
+            <div class="tech-item reveal" style="transition-delay: 0.4s"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-original.svg" alt="Dart" loading="lazy" /><span>Dart</span></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- MILESTONES -->
+      <section class="milestone-section section-pad" id="milestones">
+        <div class="section-inner">
+          <div class="section-intro reveal">
+            <p class="eyebrow">Project Milestones</p>
+            <h2>Built in evidence, <em>phase by phase.</em></h2>
+            <p class="section-copy">A timeline of key project milestones, deliverables, and assessments marking the research journey from proposal to final evaluation.</p>
+          </div>
+          <div class="milestone-timeline">
+            <div class="milestone-item reveal" style="transition-delay: 0s">
+              <div class="milestone-dot"></div>
+              <div class="milestone-card">
+                <span class="milestone-date">August 2024</span>
+                <h3>Project Proposal</h3>
+                <p>Problem framing, literature review, research gap identification, initial objectives and proposed system architecture.</p>
+                <div class="milestone-marks">
+                  <span>Marks Allocated: 6</span>
+                  <div class="marks-bar">
+                    <div class="marks-bar-fill" style="width: 6%; background: var(--cyan-500)"></div>
+                  </div>
+                  <span class="marks-pct">6%</span>
+                </div>
+              </div>
+            </div>
+            <div class="milestone-item reveal" style="transition-delay: 0.1s">
+              <div class="milestone-dot"></div>
+              <div class="milestone-card">
+                <span class="milestone-date">December 2024</span>
+                <h3>Progress Presentation I</h3>
+                <p>Flutter experience prototype, gamified activity design, synthetic-data models and database foundations.</p>
+                <div class="milestone-marks">
+                  <span>Marks Allocated: 15</span>
+                  <div class="marks-bar">
+                    <div class="marks-bar-fill" style="width: 15%; background: var(--amber-500)"></div>
+                  </div>
+                  <span class="marks-pct">15%</span>
+                </div>
+              </div>
+            </div>
+            <div class="milestone-item reveal" style="transition-delay: 0.2s">
+              <div class="milestone-dot"></div>
+              <div class="milestone-card">
+                <span class="milestone-date">March 2025</span>
+                <h3>Progress Presentation II</h3>
+                <p>FastAPI service integration, speech pipeline, adaptive engine and initial dashboard evidence.</p>
+                <div class="milestone-marks">
+                  <span>Marks Allocated: 18</span>
+                  <div class="marks-bar">
+                    <div class="marks-bar-fill" style="width: 18%; background: var(--emerald-500)"></div>
+                  </div>
+                  <span class="marks-pct">18%</span>
+                </div>
+              </div>
+            </div>
+            <div class="milestone-item reveal" style="transition-delay: 0.3s">
+              <div class="milestone-dot"></div>
+              <div class="milestone-card">
+                <span class="milestone-date">March 2025</span>
+                <h3>Research Paper</h3>
+                <p>Academic document presenting results from investigation into adaptive learning and behavioral telemetry.</p>
+                <div class="milestone-marks">
+                  <span>Marks Allocated: 10</span>
+                  <div class="marks-bar">
+                    <div class="marks-bar-fill" style="width: 10%; background: var(--violet-500)"></div>
+                  </div>
+                  <span class="marks-pct">10%</span>
+                </div>
+              </div>
+            </div>
+            <div class="milestone-item reveal" style="transition-delay: 0.4s">
+              <div class="milestone-dot"></div>
+              <div class="milestone-card">
+                <span class="milestone-date">May 2025</span>
+                <h3>Final Assessment & Viva</h3>
+                <p>Integrated prototype, parent and specialist dashboards, security review and end-to-end system evaluation.</p>
+                <div class="milestone-marks">
+                  <span>Marks Allocated: 19</span>
+                  <div class="marks-bar">
+                    <div class="marks-bar-fill" style="width: 19%; background: var(--rose-500)"></div>
+                  </div>
+                  <span class="marks-pct">19%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- DOCUMENTS -->
+      <section class="resources-section section-pad" id="documents">
+        <div class="section-inner">
+          <div class="section-intro reveal">
+            <p class="eyebrow">Documents</p>
+            <h2>The work, <em>documented.</em></h2>
+            <p class="section-copy">All documents related to the academic project. Use the links to view or download submitted files.</p>
+          </div>
+          <div class="resource-grid">
+            <article class="resource-card reveal" style="transition-delay: 0s">
+              <span class="file-badge">📄 PDF</span>
+              <h3>Topic Assessment</h3>
+              <p class="res-desc">Initial topic evaluation outlining relevance and feasibility.</p>
+              <div class="res-meta">
+                <span>Submitted on 2024/05/13</span>
+                <span class="res-type">Group</span>
+              </div>
+              <div style="margin-top: 12px">
+                <a href="#" class="download-link">Download ↗</a>
+              </div>
+            </article>
+            <article class="resource-card reveal" style="transition-delay: 0.08s">
+              <span class="file-badge">📄 PDF</span>
+              <h3>Proposal Document</h3>
+              <p class="res-desc">Explains project goals, timeline, and chosen technologies.</p>
+              <div class="res-meta">
+                <span>Submitted on 2024/08/23</span>
+                <span class="res-type">Individual</span>
+              </div>
+              <div style="margin-top: 12px">
+                <a href="#" class="download-link">Download ↗</a>
+              </div>
+            </article>
+            <article class="resource-card reveal" style="transition-delay: 0.16s">
+              <span class="file-badge">📄 PDF</span>
+              <h3>Individual Reports</h3>
+              <p class="res-desc">Detailed reports covering research, analysis, and outcomes.</p>
+              <div class="res-meta">
+                <span>Submitted on 2025/04/11</span>
+                <span class="res-type">Individual</span>
+              </div>
+              <div style="margin-top: 12px">
+                <a href="#" class="download-link">Download ↗</a>
+              </div>
+            </article>
+            <article class="resource-card reveal" style="transition-delay: 0.24s">
+              <span class="file-badge">📄 PDF</span>
+              <h3>Final Report</h3>
+              <p class="res-desc">Final group submission combining all project components.</p>
+              <div class="res-meta">
+                <span>Submitted on 2025/04/11</span>
+                <span class="res-type">Group</span>
+              </div>
+              <div style="margin-top: 12px">
+                <a href="#" class="download-link">Download ↗</a>
+              </div>
+            </article>
+            <article class="resource-card reveal" style="transition-delay: 0.32s">
+              <span class="file-badge">📄 PDF</span>
+              <h3>Research Paper</h3>
+              <p class="res-desc">The final product of the research.</p>
+              <div class="res-meta">
+                <span>Submitted on 2025/03/30</span>
+                <span class="res-type">Group</span>
+              </div>
+              <div style="margin-top: 12px">
+                <a href="#" class="download-link">Download ↗</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- PRESENTATIONS -->
+      <section class="resources-section section-pad" id="presentations" style="background: var(--navy-800)">
+        <div class="section-inner">
+          <div class="section-intro reveal">
+            <p class="eyebrow">Presentations</p>
+            <h2>Research, <em>presented.</em></h2>
+            <p class="section-copy">All submitted presentation materials related to this project.</p>
+          </div>
+          <div class="resource-grid">
+            <article class="resource-card reveal" style="transition-delay: 0s">
+              <span class="file-badge">🎞️ SLIDES</span>
+              <h3>Proposal Presentation</h3>
+              <p class="res-desc">Covers initial objectives, scope, and planned methodology for the project.</p>
+              <div class="res-meta">
+                <span>Submitted on 2024/07/06</span>
+                <span class="res-type">Group</span>
+              </div>
+              <div style="margin-top: 12px">
+                <a href="#" class="download-link">View ↗</a>
+              </div>
+            </article>
+            <article class="resource-card reveal" style="transition-delay: 0.08s">
+              <span class="file-badge">🎞️ SLIDES</span>
+              <h3>Progress Presentation I</h3>
+              <p class="res-desc">Presents approximately 50% completion, showcasing key features and received feedback.</p>
+              <div class="res-meta">
+                <span>Submitted on 2024/12/04</span>
+                <span class="res-type">Group</span>
+              </div>
+              <div style="margin-top: 12px">
+                <a href="#" class="download-link">View ↗</a>
+              </div>
+            </article>
+            <article class="resource-card reveal" style="transition-delay: 0.16s">
+              <span class="file-badge">🎞️ SLIDES</span>
+              <h3>Progress Presentation II</h3>
+              <p class="res-desc">Highlights around 90% project completion, refined design, and testing outcomes.</p>
+              <div class="res-meta">
+                <span>Submitted on 2025/03/18</span>
+                <span class="res-type">Group</span>
+              </div>
+              <div style="margin-top: 12px">
+                <a href="#" class="download-link">View ↗</a>
+              </div>
+            </article>
+            <article class="resource-card reveal" style="transition-delay: 0.24s">
+              <span class="file-badge">🎞️ SLIDES</span>
+              <h3>Final Presentation</h3>
+              <p class="res-desc">Final project delivery with system demo, research findings, and overall conclusions.</p>
+              <div class="res-meta">
+                <span>Submitted on 2025/05/07</span>
+                <span class="res-type">Group</span>
+              </div>
+              <div style="margin-top: 12px">
+                <a href="#" class="download-link">View ↗</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- TEAM -->
+      <section class="team-section section-pad" id="team">
+        <div class="section-inner">
+          <div class="section-intro reveal">
+            <p class="eyebrow">About Us</p>
+            <h2>Meet our <em>team.</em></h2>
+            <p class="section-copy">Software Engineering undergraduates at SLIIT, working across human-centered design, data engineering, machine learning and mobile development.</p>
+          </div>
+          
+          <h3 class="team-sub-heading reveal">Supervisors</h3>
+          <div class="supervisor-showcase" style="margin-bottom: 56px">
+            <article class="supervisor-card supervisor-main reveal" style="transition-delay: 0s">
+              <div class="supervisor-card-glow"></div>
+              <div class="supervisor-photo-wrapper">
+                <div class="supervisor-photo-ring"></div>
+                <img src="./images/team/supervisor.jpg" alt="Ms. Thilini Jayalath" class="supervisor-photo" loading="lazy" />
+                <div class="supervisor-photo-overlay"></div>
+              </div>
+              <div class="supervisor-info">
+                <span class="supervisor-badge badge-primary">★ Supervisor</span>
+                <h3>Ms. Thilini Jayalath</h3>
+                <p class="supervisor-institution">SLIIT</p>
+                <p class="supervisor-dept">Department of <em>Information Technology</em></p>
+                <div class="team-links">
+                  <a href="#" class="email-link">Email</a>
+                  <a href="#" class="linkedin-link">LinkedIn</a>
+                </div>
+              </div>
+            </article>
+            <article class="supervisor-card supervisor-co reveal" style="transition-delay: 0.15s">
+              <div class="supervisor-card-glow"></div>
+              <div class="supervisor-photo-wrapper">
+                <div class="supervisor-photo-ring"></div>
+                <img src="./images/team/co-supervisor.jpg" alt="Ms. Thilini Jayalath" class="supervisor-photo" loading="lazy" />
+                <div class="supervisor-photo-overlay"></div>
+              </div>
+              <div class="supervisor-info">
+                <span class="supervisor-badge badge-secondary">Co-Supervisor</span>
+                <h3>Ms. Thilini Jayalath</h3>
+                <p class="supervisor-institution">SLIIT</p>
+                <p class="supervisor-dept">Department of <em>Software Engineering</em></p>
+                <div class="team-links">
+                  <a href="#" class="email-link">Email</a>
+                  <a href="#" class="linkedin-link">LinkedIn</a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <h3 class="team-sub-heading reveal">Student Team</h3>
+          <div class="student-showcase">
+            <article class="student-card student-leader reveal" style="transition-delay: 0s">
+              <div class="student-card-glow"></div>
+              <div class="student-photo-wrapper">
+                <div class="student-photo-ring"></div>
+                <img src="./images/team/leader.jpg" alt="Research Member 01" class="student-photo" loading="lazy" />
+              </div>
+              <div class="student-info">
+                <span class="student-badge badge-leader">★ Team Leader</span>
+                <h3>Research Member 01</h3>
+                <p class="student-component">C1 — Behavioral Telemetry</p>
+                <p class="student-institution">SLIIT — Faculty of Computing<br />Department: <em>Information Technology</em></p>
+                <div class="team-links">
+                  <a href="#" class="email-link">Email</a>
+                  <a href="#" class="linkedin-link">LinkedIn</a>
+                </div>
+              </div>
+            </article>
+            <article class="student-card  reveal" style="transition-delay: 0.12s">
+              <div class="student-card-glow"></div>
+              <div class="student-photo-wrapper">
+                <div class="student-photo-ring"></div>
+                <img src="./images/team/member2.jpg" alt="Research Member 02" class="student-photo" loading="lazy" />
+              </div>
+              <div class="student-info">
+                <span class="student-badge badge-member">Team Member</span>
+                <h3>Research Member 02</h3>
+                <p class="student-component">C2 — Speech Monitoring</p>
+                <p class="student-institution">SLIIT — Faculty of Computing<br />Department: <em>Information Technology</em></p>
+                <div class="team-links">
+                  <a href="#" class="email-link">Email</a>
+                  <a href="#" class="linkedin-link">LinkedIn</a>
+                </div>
+              </div>
+            </article>
+            <article class="student-card  reveal" style="transition-delay: 0.24s">
+              <div class="student-card-glow"></div>
+              <div class="student-photo-wrapper">
+                <div class="student-photo-ring"></div>
+                <img src="./images/team/member2-3.jpg" alt="Research Member 03" class="student-photo" loading="lazy" />
+              </div>
+              <div class="student-info">
+                <span class="student-badge badge-member">Team Member</span>
+                <h3>Research Member 03</h3>
+                <p class="student-component">C3 — Diagnostic Fusion</p>
+                <p class="student-institution">SLIIT — Faculty of Computing<br />Department: <em>Information Technology</em></p>
+                <div class="team-links">
+                  <a href="#" class="email-link">Email</a>
+                  <a href="#" class="linkedin-link">LinkedIn</a>
+                </div>
+              </div>
+            </article>
+            <article class="student-card  reveal" style="transition-delay: 0.36s">
+              <div class="student-card-glow"></div>
+              <div class="student-photo-wrapper">
+                <div class="student-photo-ring"></div>
+                <img src="./images/team/member4.jpg" alt="Research Member 04" class="student-photo" loading="lazy" />
+              </div>
+              <div class="student-info">
+                <span class="student-badge badge-member">Team Member</span>
+                <h3>Research Member 04</h3>
+                <p class="student-component">C4 — Adaptive Tutoring</p>
+                <p class="student-institution">SLIIT — Faculty of Computing<br />Department: <em>Information Technology</em></p>
+                <div class="team-links">
+                  <a href="#" class="email-link">Email</a>
+                  <a href="#" class="linkedin-link">LinkedIn</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section class="contact-section section-pad" id="contact">
+        <div class="section-inner">
+          <div class="section-intro reveal">
+            <p class="eyebrow">Contact Us</p>
+            <h2>Let's talk about <em>better learning support.</em></h2>
+            <p class="section-copy">Got a question? Send us a message and we'll respond promptly.</p>
+          </div>
+          <div class="contact-layout">
+            <div class="contact-copy">
+              <h3>Contact Details</h3>
+              <p>
+                For research collaboration, academic discussion or project enquiries,
+                leave the team a message.
+              </p>
+              <div class="contact-details">
+                <div>
+                  <span>Institution</span>
+                  <b>Sri Lanka Institute of Information Technology</b>
+                </div>
+                <div>
+                  <span>Project</span>
+                  <b>Sipsara Research Initiative</b>
+                </div>
+                <div>
+                  <span>Email</span>
+                  <a href="mailto:sipsara@example.com"><b>sipsara@example.com</b></a>
+                </div>
+              </div>
+            </div>
+            <form class="contact-form" onsubmit="submitContact(event)">
+              <div class="field-row">
+                <label>
+                  Name
+                  <input required name="name" placeholder="Your name" />
+                </label>
+                <label>
+                  Email
+                  <input required type="email" name="email" placeholder="you@example.com" />
+                </label>
+              </div>
+              <label>
+                Message
+                <textarea required name="message" rows="5" placeholder="Tell us about your enquiry…"></textarea>
+              </label>
+              <button class="btn-primary btn-submit" type="submit">
+                Send Message 
+                <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11M11 5l5 5-5 5" /></svg>
+              </button>
+              <div id="form-success-msg" class="form-success" style="display: none;">
+                ✓ Thank you! Your message has been received. We'll get back to you soon.
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div class="footer-top">
+          <div class="footer-brand">
+            <img src="./images/logo.png" alt="Sipsara Logo" class="brand-logo footer-logo" />
+            <span>Sipsara</span>
+          </div>
+          <nav class="footer-nav">
+            <a href="#hero" onclick="event.preventDefault(); jumpTo('hero')">Home</a>
+            <a href="#domain" onclick="event.preventDefault(); jumpTo('domain')">Domain</a>
+            <a href="#milestones" onclick="event.preventDefault(); jumpTo('milestones')">Milestones</a>
+            <a href="#documents" onclick="event.preventDefault(); jumpTo('documents')">Documents</a>
+            <a href="#presentations" onclick="event.preventDefault(); jumpTo('presentations')">Presentations</a>
+            <a href="#team" onclick="event.preventDefault(); jumpTo('team')">About us</a>
+            <a href="#contact" onclick="event.preventDefault(); jumpTo('contact')">Contact us</a>
+          </nav>
+        </div>
+        <div class="footer-bottom">
+          <p>AI-assisted adaptive learning research for Grade 1 Sinhala education.</p>
+          <div>
+            <a href="#hero" onclick="event.preventDefault(); jumpTo('hero')">Back to top ↑</a>
+            <span style="margin: 0 12px; color: var(--gray-700)">·</span>
+            <span style="color: var(--gray-600); font-size: 12px">© 2025 Sipsara Research Team</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script>
+    // Navigation toggle for mobile
+    function toggleMenu() {
+      const navLinks = document.getElementById('nav-links');
+      navLinks.classList.toggle('open');
+    }
+
+    // Smooth scroll and jump to section
+    function jumpTo(id) {
+      const el = document.getElementById(id);
+      if (el) {
+        el.scrollIntoView({ behavior: 'smooth' });
+      }
+      document.getElementById('nav-links').classList.remove('open');
+    }
+
+    // Contact form submit logic
+    function submitContact(e) {
+      e.preventDefault();
+      document.getElementById('form-success-msg').style.display = 'block';
+      e.target.reset();
+    }
+
+    // Header scrolled state
+    window.addEventListener('scroll', () => {
+      const header = document.getElementById('site-header');
+      if (window.scrollY > 40) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    }, { passive: true });
+
+    // Scroll reveal
+    document.addEventListener('DOMContentLoaded', () => {
+      const revealElements = document.querySelectorAll('.reveal');
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+      revealElements.forEach((el) => observer.observe(el));
+    });
+
+    // Scroll spy for active nav link
+    document.addEventListener('DOMContentLoaded', () => {
+      const navItems = ["hero","domain","milestones","documents","presentations","team","contact"];
+      const sections = navItems.map(id => document.getElementById(id)).filter(Boolean);
+      
+      const spyObserver = new IntersectionObserver((entries) => {
+        const visible = entries
+          .filter(e => e.isIntersecting)
+          .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+        
+        if (visible) {
+          navItems.forEach(id => {
+            const link = document.getElementById('nav-' + id);
+            if (link) {
+              if (id === visible.target.id) {
+                link.classList.add('active');
+              } else {
+                link.classList.remove('active');
+              }
+            }
+          });
+        }
+      }, { rootMargin: '-30% 0px -60% 0px', threshold: [0.05, 0.2, 0.5] });
+      
+      sections.forEach(s => spyObserver.observe(s));
+    });
+  </script>
+</body>
 </html>
