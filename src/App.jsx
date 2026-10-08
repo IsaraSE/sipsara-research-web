@@ -197,15 +197,15 @@ const PRESENTATIONS = [
 ]
 
 const SUPERVISORS = [
-  { name: 'Supervisor Name', role: 'Supervisor', institution: 'SLIIT', department: 'Information Technology' },
-  { name: 'Co-Supervisor Name', role: 'Co-Supervisor', institution: 'SLIIT', department: 'Software Engineering' },
+  { name: 'Ms. Thilini Jayalath', role: 'Supervisor', institution: 'SLIIT', department: 'Information Technology', image: './images/team/supervisor.jpg' },
+  { name: 'Ms. Thilini Jayalath', role: 'Co-Supervisor', institution: 'SLIIT', department: 'Software Engineering', image: './images/team/co-supervisor.jpg' },
 ]
 
 const STUDENTS = [
-  { name: 'Research Member 01', role: 'Team Leader', component: 'C1 — Behavioral Telemetry', initials: 'M1' },
-  { name: 'Research Member 02', role: 'Team Member', component: 'C2 — Speech Monitoring', initials: 'M2' },
-  { name: 'Research Member 03', role: 'Team Member', component: 'C3 — Diagnostic Fusion', initials: 'M3' },
-  { name: 'Research Member 04', role: 'Team Member', component: 'C4 — Adaptive Tutoring', initials: 'M4' },
+  { name: 'Research Member 01', role: 'Team Leader', component: 'C1 — Behavioral Telemetry', initials: 'M1', image: './images/team/leader.jpg' },
+  { name: 'Research Member 02', role: 'Team Member', component: 'C2 — Speech Monitoring', initials: 'M2', image: './images/team/member2-3.jpg' },
+  { name: 'Research Member 03', role: 'Team Member', component: 'C3 — Diagnostic Fusion', initials: 'M3', image: './images/team/member2-3.jpg' },
+  { name: 'Research Member 04', role: 'Team Member', component: 'C4 — Adaptive Tutoring', initials: 'M4', image: './images/team/member4.jpg' },
 ]
 
 /* ═══════════════════════════════════════════════
@@ -647,19 +647,26 @@ export default function App() {
 
             {/* Supervisors */}
             <h3 className="team-sub-heading reveal">Supervisors</h3>
-            <div className="supervisor-grid" style={{ marginBottom: 48 }}>
+            <div className="supervisor-showcase" style={{ marginBottom: 56 }}>
               {SUPERVISORS.map((sup, i) => (
-                <article className="team-card reveal" key={sup.name} style={{ transitionDelay: `${i * 0.1}s` }}>
-                  <div className="team-avatar" style={{ background: 'linear-gradient(135deg, var(--navy-600), var(--navy-500))' }}>
-                    {sup.name.split(' ').map(w => w[0]).join('').slice(0, 2)}
+                <article className={`supervisor-card ${sup.role === 'Supervisor' ? 'supervisor-main' : 'supervisor-co'} reveal`} key={sup.role} style={{ transitionDelay: `${i * 0.15}s` }}>
+                  <div className="supervisor-card-glow" />
+                  <div className="supervisor-photo-wrapper">
+                    <div className="supervisor-photo-ring" />
+                    <img src={sup.image} alt={sup.name} className="supervisor-photo" loading="lazy" />
+                    <div className="supervisor-photo-overlay" />
                   </div>
-                  <span className="member-component c-lead">{sup.role}</span>
-                  <h3>{sup.name}</h3>
-                  <p>{sup.institution}</p>
-                  <p className="institution">Department: <em>{sup.department}</em></p>
-                  <div className="team-links">
-                    <a href="#" className="email-link">Email</a>
-                    <a href="#" className="linkedin-link">LinkedIn</a>
+                  <div className="supervisor-info">
+                    <span className={`supervisor-badge ${sup.role === 'Supervisor' ? 'badge-primary' : 'badge-secondary'}`}>
+                      {sup.role === 'Supervisor' ? '★ ' : ''}{sup.role}
+                    </span>
+                    <h3>{sup.name}</h3>
+                    <p className="supervisor-institution">{sup.institution}</p>
+                    <p className="supervisor-dept">Department of <em>{sup.department}</em></p>
+                    <div className="team-links">
+                      <a href="#" className="email-link">Email</a>
+                      <a href="#" className="linkedin-link">LinkedIn</a>
+                    </div>
                   </div>
                 </article>
               ))}
@@ -667,19 +674,25 @@ export default function App() {
 
             {/* Students */}
             <h3 className="team-sub-heading reveal">Student Team</h3>
-            <div className="team-grid">
+            <div className="student-showcase">
               {STUDENTS.map((s, i) => (
-                <article className="team-card reveal" key={s.name} style={{ transitionDelay: `${i * 0.1}s` }}>
-                  <div className="team-avatar">{s.initials}</div>
-                  <span className={`member-component ${s.role === 'Team Leader' ? 'c-lead' : 'c-member'}`}>
-                    {s.role}
-                  </span>
-                  <h3>{s.name}</h3>
-                  <p>{s.component}</p>
-                  <p className="institution">SLIIT — Faculty of Computing<br />Department: <em>Information Technology</em></p>
-                  <div className="team-links">
-                    <a href="#" className="email-link">Email</a>
-                    <a href="#" className="linkedin-link">LinkedIn</a>
+                <article className={`student-card ${s.role === 'Team Leader' ? 'student-leader' : ''} reveal`} key={s.name} style={{ transitionDelay: `${i * 0.12}s` }}>
+                  <div className="student-card-glow" />
+                  <div className="student-photo-wrapper">
+                    <div className="student-photo-ring" />
+                    <img src={s.image} alt={s.name} className="student-photo" loading="lazy" />
+                  </div>
+                  <div className="student-info">
+                    <span className={`student-badge ${s.role === 'Team Leader' ? 'badge-leader' : 'badge-member'}`}>
+                      {s.role === 'Team Leader' ? '★ ' : ''}{s.role}
+                    </span>
+                    <h3>{s.name}</h3>
+                    <p className="student-component">{s.component}</p>
+                    <p className="student-institution">SLIIT — Faculty of Computing<br />Department: <em>Information Technology</em></p>
+                    <div className="team-links">
+                      <a href="#" className="email-link">Email</a>
+                      <a href="#" className="linkedin-link">LinkedIn</a>
+                    </div>
                   </div>
                 </article>
               ))}
