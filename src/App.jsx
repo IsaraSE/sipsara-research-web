@@ -203,7 +203,7 @@ const SUPERVISORS = [
 
 const STUDENTS = [
   { name: 'Research Member 01', role: 'Team Leader', component: 'C1 — Behavioral Telemetry', initials: 'M1', image: './images/team/leader.jpg' },
-  { name: 'Research Member 02', role: 'Team Member', component: 'C2 — Speech Monitoring', initials: 'M2', image: './images/team/member2-3.jpg' },
+  { name: 'Research Member 02', role: 'Team Member', component: 'C2 — Speech Monitoring', initials: 'M2', image: './images/team/member2.jpg' },
   { name: 'Research Member 03', role: 'Team Member', component: 'C3 — Diagnostic Fusion', initials: 'M3', image: './images/team/member2-3.jpg' },
   { name: 'Research Member 04', role: 'Team Member', component: 'C4 — Adaptive Tutoring', initials: 'M4', image: './images/team/member4.jpg' },
 ]
