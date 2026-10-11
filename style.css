@@ -628,6 +628,37 @@ ul, ol { list-style: none; }
 .resource-card .res-meta .res-type { font-weight: 700; color: var(--text-secondary); }
 .resource-card .download-link { display: inline-flex; align-items: center; gap: 4px; font-weight: 600; color: var(--primary); font-size: 14px; transition: color .2s; }
 .resource-card .download-link:hover { color: #0e7490; }
+.resource-card .pending-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--amber-500);
+  background: rgba(217, 119, 6, 0.08);
+  border: 1px solid rgba(217, 119, 6, 0.22);
+  padding: 4px 12px;
+  border-radius: var(--radius-full);
+  letter-spacing: .02em;
+  user-select: none;
+}
+.resource-card .pending-badge .pending-dot {
+  width: 6px;
+  height: 6px;
+  background: var(--amber-500);
+  border-radius: 50%;
+  animation: pulse-dot-amber 2s infinite ease-in-out;
+}
+@keyframes pulse-dot-amber {
+  0%, 100% {
+    opacity: 1;
+    box-shadow: 0 0 0 0 rgba(217, 119, 6, 0.5);
+  }
+  50% {
+    opacity: 0.7;
+    box-shadow: 0 0 0 5px rgba(217, 119, 6, 0);
+  }
+}
 
 /* ═══════════════════════ TEAM ═══════════════════════ */
 .team-section { background: linear-gradient(180deg, #f8fafb, #f0f4f8); }
