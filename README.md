@@ -63,12 +63,12 @@ Then visit `http://localhost:8000/`.
 
 ## 👨‍💻 Research Team
 
-This research is conducted by Software Engineering undergraduates at **SLIIT**, under the guidance of our supervisors in the Department of Information Technology. 
+This research is conducted by Software Engineering undergraduates at **SLIIT**, under the guidance of our supervisors in the Department of Software Engineering. 
 
-- **C1** — Behavioral Telemetry
-- **C2** — Speech Monitoring
-- **C3** — Diagnostic Fusion
-- **C4** — Adaptive Tutoring
+- **C1** — Speech Monitoring (R.K.R.M.S.K Gunasena)
+- **C2** — Behavioral Telemetry (K.D.M.D Perera)
+- **C3** — Diagnostic Fusion (K.T Olivea)
+- **C4** — Adaptive Tutoring (E.M.I.S Ekanayake)
 
 ## 📞 Contact
 
