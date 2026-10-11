@@ -72,7 +72,7 @@ This research is conducted by Software Engineering undergraduates at **SLIIT**, 
 
 ## 📞 Contact
 
-For research collaboration, academic discussion, or project inquiries, please reach out via **[sipsara.research@sliit.lk](mailto:sipsara.research@sliit.lk)**.
+For research collaboration, academic discussion, or project inquiries, please reach out via **[sipsara.app.support@gmail.com](mailto:sipsara.app.support@gmail.com)**.
 
 ---
 <div align="center">
