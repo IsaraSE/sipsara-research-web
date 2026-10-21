@@ -819,6 +819,8 @@ ul, ol { list-style: none; }
 .contact-details b { font-size: 16px; font-weight: 600; color: var(--text-primary); }
 .contact-details a { color: var(--primary); transition: color .2s; }
 .contact-details a:hover { color: #0e7490; }
+.contact-email-list { display: flex; flex-direction: column; gap: 4px; }
+.contact-email-list a { width: fit-content; font-size: 14px; font-weight: 600; overflow-wrap: anywhere; }
 
 .contact-form {
   background: var(--white); border: 1px solid var(--gray-200);

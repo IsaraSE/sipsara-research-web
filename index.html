@@ -692,19 +692,25 @@
                   <b>Sipsara Research Initiative</b>
                 </div>
                 <div>
-                  <span>Email</span>
-                  <a href="mailto:sipsara.app.support@gmail.com"><b>sipsara.app.support@gmail.com</b></a>
+                  <span>Team Emails</span>
+                  <div class="contact-email-list">
+                    <a href="mailto:kavindugunasena@gmail.com">kavindugunasena@gmail.com</a>
+                    <a href="mailto:it22642882@my.sliit.lk">it22642882@my.sliit.lk</a>
+                    <a href="mailto:tursholivea@gmail.com">tursholivea@gmail.com</a>
+                    <a href="mailto:isaraekanayake123@gmail.com">isaraekanayake123@gmail.com</a>
+                  </div>
                 </div>
               </div>
             </div>
             <form
               id="contact-form"
               class="contact-form"
-              action="https://formsubmit.co/ajax/sipsara.app.support@gmail.com"
+              action="https://formsubmit.co/ajax/kavindugunasena@gmail.com"
               method="POST"
               onsubmit="submitContact(event)"
             >
               <input type="hidden" name="_subject" value="New message from the Sipsara research website" />
+              <input type="hidden" name="_cc" value="it22642882@my.sliit.lk,tursholivea@gmail.com,isaraekanayake123@gmail.com" />
               <input type="hidden" name="_template" value="table" />
               <input type="text" name="_honey" class="form-honeypot" tabindex="-1" autocomplete="off" aria-hidden="true" />
               <div class="field-row">
@@ -813,7 +819,7 @@
         form.reset();
       } catch (error) {
         console.error('Contact form submission failed:', error);
-        statusMessage.textContent = 'We couldn’t send your message. Please try again or email sipsara.app.support@gmail.com directly.';
+        statusMessage.textContent = 'We couldn’t send your message. Please try again or email one of the team members directly.';
         statusMessage.classList.add('is-error');
       } finally {
         statusMessage.hidden = false;

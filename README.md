@@ -59,8 +59,10 @@ Before the form can deliver messages:
 
 1. Run the site through a local server or deploy it.
 2. Submit one test message through the contact form.
-3. Open `sipsara.app.support@gmail.com` and click the activation link sent by FormSubmit.
-4. Submit a second test message and confirm that it reaches the inbox (check Spam as well).
+3. Open `kavindugunasena@gmail.com` and click the activation link sent by FormSubmit.
+4. Submit a second test message and confirm that it reaches all four team inboxes (check Spam as well).
+
+The team leader's address is the primary FormSubmit recipient. The other three member addresses are included through FormSubmit's `_cc` field.
 
 FormSubmit keeps reCAPTCHA enabled by default. The form also includes a hidden honeypot field to reduce automated spam.
 
@@ -85,7 +87,12 @@ This research is conducted by Software Engineering undergraduates at **SLIIT**, 
 
 ## 📞 Contact
 
-For research collaboration, academic discussion, or project inquiries, please reach out via **[sipsara.app.support@gmail.com](mailto:sipsara.app.support@gmail.com)**.
+For research collaboration, academic discussion, or project inquiries, contact the student team:
+
+- [kavindugunasena@gmail.com](mailto:kavindugunasena@gmail.com)
+- [it22642882@my.sliit.lk](mailto:it22642882@my.sliit.lk)
+- [tursholivea@gmail.com](mailto:tursholivea@gmail.com)
+- [isaraekanayake123@gmail.com](mailto:isaraekanayake123@gmail.com)
 
 ---
 <div align="center">
