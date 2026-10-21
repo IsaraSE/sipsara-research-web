@@ -51,6 +51,19 @@ python -m http.server 8000
 ```
 Then visit `http://localhost:8000/`.
 
+## ✉️ Contact Form Setup
+
+The contact form posts to [FormSubmit](https://formsubmit.co/) so it can send email while the site remains fully static. No Gmail password or API secret is stored in this repository.
+
+Before the form can deliver messages:
+
+1. Run the site through a local server or deploy it.
+2. Submit one test message through the contact form.
+3. Open `sipsara.app.support@gmail.com` and click the activation link sent by FormSubmit.
+4. Submit a second test message and confirm that it reaches the inbox (check Spam as well).
+
+FormSubmit keeps reCAPTCHA enabled by default. The form also includes a hidden honeypot field to reduce automated spam.
+
 ## 📁 Project Structure
 
 ```text

@@ -838,12 +838,15 @@ ul, ol { list-style: none; }
 .contact-form input:focus, .contact-form textarea:focus { border-color: var(--primary); background: var(--white); box-shadow: 0 0 0 3px rgba(8,145,178,.1); }
 .contact-form textarea { resize: vertical; min-height: 120px; }
 .contact-form .btn-submit { width: 100%; margin-top: 8px; }
-.form-success {
+.contact-form .btn-submit:disabled { cursor: wait; opacity: .7; }
+.form-honeypot { position: absolute !important; left: -9999px !important; }
+.form-status {
   text-align: center; padding: 18px;
-  background: rgba(5,150,105,.06); border: 1px solid rgba(5,150,105,.15);
   border-radius: var(--radius-md); margin-top: 14px;
-  font-size: 15px; font-weight: 500; color: var(--emerald-500);
+  font-size: 15px; font-weight: 500;
 }
+.form-status.is-success { background: rgba(5,150,105,.06); border: 1px solid rgba(5,150,105,.15); color: var(--emerald-500); }
+.form-status.is-error { background: rgba(220,38,38,.06); border: 1px solid rgba(220,38,38,.15); color: #b91c1c; }
 
 /* ═══════════════════════ FOOTER ═══════════════════════ */
 .site-footer { background: var(--text-primary); border-top: none; padding: 52px clamp(20px, 5vw, 80px) 36px; }

@@ -697,27 +697,35 @@
                 </div>
               </div>
             </div>
-            <form class="contact-form" onsubmit="submitContact(event)">
+            <form
+              id="contact-form"
+              class="contact-form"
+              action="https://formsubmit.co/ajax/sipsara.app.support@gmail.com"
+              method="POST"
+              onsubmit="submitContact(event)"
+            >
+              <input type="hidden" name="_subject" value="New message from the Sipsara research website" />
+              <input type="hidden" name="_template" value="table" />
+              <input type="text" name="_honey" class="form-honeypot" tabindex="-1" autocomplete="off" aria-hidden="true" />
               <div class="field-row">
                 <label>
                   Name
-                  <input required name="name" placeholder="Your name" />
+                  <input required name="name" placeholder="Your name" autocomplete="name" maxlength="100" />
                 </label>
                 <label>
                   Email
-                  <input required type="email" name="email" placeholder="you@example.com" />
+                  <input required type="email" name="email" placeholder="you@example.com" autocomplete="email" maxlength="254" />
                 </label>
               </div>
               <label>
                 Message
-                <textarea required name="message" rows="5" placeholder="Tell us about your enquiry…"></textarea>
+                <textarea required name="message" rows="5" placeholder="Tell us about your enquiry…" maxlength="5000"></textarea>
               </label>
               <button class="btn-primary btn-submit" type="submit">
                 Send Message 
                 <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11M11 5l5 5-5 5" /></svg>
               </button>
-              <div id="form-success-msg" class="form-success" style="display: none;">
-                ✓ Thank you! Your message has been received. We'll get back to you soon.
+              <div id="form-status-msg" class="form-status" role="status" aria-live="polite" hidden>
               </div>
             </form>
           </div>
@@ -770,11 +778,48 @@
       document.getElementById('nav-links').classList.remove('open');
     }
 
-    // Contact form submit logic
-    function submitContact(e) {
+    // Send contact messages through FormSubmit (works on static hosting such as GitHub Pages).
+    async function submitContact(e) {
       e.preventDefault();
-      document.getElementById('form-success-msg').style.display = 'block';
-      e.target.reset();
+
+      const form = e.currentTarget;
+      const submitButton = form.querySelector('button[type="submit"]');
+      const statusMessage = document.getElementById('form-status-msg');
+      const originalButtonContent = submitButton.innerHTML;
+
+      statusMessage.hidden = true;
+      statusMessage.className = 'form-status';
+      submitButton.disabled = true;
+      submitButton.textContent = 'Sending…';
+
+      try {
+        const response = await fetch(form.action, {
+          method: 'POST',
+          body: new FormData(form),
+          headers: { Accept: 'application/json' }
+        });
+
+        if (!response.ok) {
+          throw new Error('The message service returned an error.');
+        }
+
+        const result = await response.json();
+        if (result.success === false || result.success === 'false') {
+          throw new Error(result.message || 'The message could not be sent.');
+        }
+
+        statusMessage.textContent = '✓ Thank you! Your message was sent. We’ll get back to you soon.';
+        statusMessage.classList.add('is-success');
+        form.reset();
+      } catch (error) {
+        console.error('Contact form submission failed:', error);
+        statusMessage.textContent = 'We couldn’t send your message. Please try again or email sipsara.app.support@gmail.com directly.';
+        statusMessage.classList.add('is-error');
+      } finally {
+        statusMessage.hidden = false;
+        submitButton.disabled = false;
+        submitButton.innerHTML = originalButtonContent;
+      }
     }
 
     // Header scrolled state
