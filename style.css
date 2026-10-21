@@ -626,8 +626,52 @@ ul, ol { list-style: none; }
   font-size: 13px; color: var(--text-muted);
 }
 .resource-card .res-meta .res-type { font-weight: 700; color: var(--text-secondary); }
-.resource-card .download-link { display: inline-flex; align-items: center; gap: 4px; font-weight: 600; color: var(--primary); font-size: 14px; transition: color .2s; }
+.resource-card .download-link { display: inline-flex; align-items: center; gap: 4px; font-weight: 600; color: var(--primary); font-size: 14px; transition: color .2s; text-decoration: none; }
 .resource-card .download-link:hover { color: #0e7490; }
+
+.resource-card .resource-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 14px;
+}
+
+.resource-card .res-btn-download {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 7px 16px;
+  border-radius: var(--radius-md);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--white);
+  background: linear-gradient(135deg, var(--cyan-500), #0e7490);
+  border: 1px solid transparent;
+  box-shadow: 0 2px 8px rgba(8, 145, 178, 0.22);
+  text-decoration: none;
+  transition: all .2s var(--ease);
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.resource-card .res-btn-download:hover {
+  transform: translateY(-1.5px);
+  box-shadow: 0 4px 14px rgba(8, 145, 178, 0.35);
+  filter: brightness(1.05);
+}
+
+.resource-card .res-btn-download svg {
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+  transition: transform .2s var(--ease);
+}
+
+.resource-card .res-btn-download:hover svg {
+  transform: translateY(1.5px);
+}
 .resource-card .pending-badge {
   display: inline-flex;
   align-items: center;

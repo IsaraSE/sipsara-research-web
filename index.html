@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Sipsara Research Initiative</title>
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@600;700&display=swap"
+    rel="stylesheet">
 </head>
+
 <body>
   <div class="site-shell">
     <!-- HEADER -->
@@ -23,13 +27,16 @@
         <a href="#domain" id="nav-domain" onclick="event.preventDefault(); jumpTo('domain')">Domain</a>
         <a href="#milestones" id="nav-milestones" onclick="event.preventDefault(); jumpTo('milestones')">Milestones</a>
         <a href="#documents" id="nav-documents" onclick="event.preventDefault(); jumpTo('documents')">Documents</a>
-        <a href="#presentations" id="nav-presentations" onclick="event.preventDefault(); jumpTo('presentations')">Presentations</a>
+        <a href="#presentations" id="nav-presentations"
+          onclick="event.preventDefault(); jumpTo('presentations')">Presentations</a>
         <a href="#team" id="nav-team" onclick="event.preventDefault(); jumpTo('team')">About us</a>
         <a href="#contact" id="nav-contact" onclick="event.preventDefault(); jumpTo('contact')">Contact us</a>
       </nav>
       <button class="header-cta" onclick="jumpTo('documents')">
-        Research Library 
-        <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11M11 5l5 5-5 5" /></svg>
+        Research Library
+        <svg viewBox="0 0 20 20" aria-hidden="true">
+          <path d="M4 10h11M11 5l5 5-5 5" />
+        </svg>
       </button>
       <button class="menu-toggle" aria-label="Toggle navigation" onclick="toggleMenu()">
         <span></span><span></span>
@@ -56,8 +63,10 @@
           </p>
           <div class="hero-actions">
             <button class="btn-primary" onclick="jumpTo('domain')">
-              Explore the Research 
-              <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11M11 5l5 5-5 5" /></svg>
+              Explore the Research
+              <svg viewBox="0 0 20 20" aria-hidden="true">
+                <path d="M4 10h11M11 5l5 5-5 5" />
+              </svg>
             </button>
             <button class="btn-ghost" onclick="jumpTo('team')">
               Meet the Team
@@ -80,7 +89,7 @@
         <div class="thesis-inner">
           <p class="thesis-sub">Our Research Question</p>
           <h2>
-            Can a learning experience notice when a child needs support — 
+            Can a learning experience notice when a child needs support —
             <em>without making learning feel like a test?</em>
           </h2>
           <div class="strip-metrics">
@@ -98,28 +107,36 @@
           <div class="section-intro reveal">
             <p class="eyebrow">Research Problem</p>
             <h2>Challenges in <em>early learning support.</em></h2>
-            <p class="section-copy">Current AI tools are specialized and isolated. An integrated system combining behavioral telemetry, speech analysis, and adaptive learning in Sinhala remains an open challenge.</p>
+            <p class="section-copy">Current AI tools are specialized and isolated. An integrated system combining
+              behavioral telemetry, speech analysis, and adaptive learning in Sinhala remains an open challenge.</p>
           </div>
           <div class="domain-grid">
             <article class="domain-card reveal" style="transition-delay: 0s">
               <p class="card-label">01. Fragmentation</p>
               <h3>Fragmented Learning Tools</h3>
-              <p>Current Sinhala learning tools are specialized and isolated, requiring parents to switch between multiple platforms. An integrated, unified system that delivers adaptive learning support in a single environment is missing.</p>
+              <p>Current Sinhala learning tools are specialized and isolated, requiring parents to switch between
+                multiple platforms. An integrated, unified system that delivers adaptive learning support in a single
+                environment is missing.</p>
             </article>
             <article class="domain-card reveal" style="transition-delay: 0.1s">
               <p class="card-label">02. Observation</p>
               <h3>Limited Learning Observation</h3>
-              <p>Conventional assessments capture only final answers. Digital learning can also reveal the process — hesitation, correction, effort, speech and progress over time — yet most tools ignore these behavioral signals.</p>
+              <p>Conventional assessments capture only final answers. Digital learning can also reveal the process —
+                hesitation, correction, effort, speech and progress over time — yet most tools ignore these behavioral
+                signals.</p>
             </article>
             <article class="domain-card reveal" style="transition-delay: 0.2s">
               <p class="card-label">03. Adaptation</p>
               <h3>Static Learning Paths</h3>
-              <p>Existing educational apps use one-size-fits-all content. Personalized, adaptive difficulty adjustment based on real-time behavioral telemetry and mastery state is still missing in Sinhala-first platforms.</p>
+              <p>Existing educational apps use one-size-fits-all content. Personalized, adaptive difficulty adjustment
+                based on real-time behavioral telemetry and mastery state is still missing in Sinhala-first platforms.
+              </p>
             </article>
             <article class="domain-card reveal" style="transition-delay: 0.3s">
               <p class="card-label">04. Explainability</p>
               <h3>Opaque Model Decisions</h3>
-              <p>Few child learning systems explain their analytical decisions. Parents and specialists need transparent, interpretable summaries of how the system assesses a child's learning patterns.</p>
+              <p>Few child learning systems explain their analytical decisions. Parents and specialists need
+                transparent, interpretable summaries of how the system assesses a child's learning patterns.</p>
             </article>
           </div>
         </div>
@@ -131,28 +148,33 @@
           <div class="section-intro reveal">
             <p class="eyebrow">Research Gap</p>
             <h2>Where current systems <em>fall short.</em></h2>
-            <p class="section-copy">Few child-friendly systems combine Sinhala learning content, behavioral telemetry, speech evidence and real-time adaptation in one coherent workflow.</p>
+            <p class="section-copy">Few child-friendly systems combine Sinhala learning content, behavioral telemetry,
+              speech evidence and real-time adaptation in one coherent workflow.</p>
           </div>
           <div class="gap-grid">
             <article class="gap-card reveal" style="transition-delay: 0s">
               <div class="gap-icon">🔬</div>
               <h3>Local Language Gap</h3>
-              <p>Few AI-driven systems combine Sinhala learning content with behavioral telemetry, speech evidence, and real-time adaptation in one coherent workflow.</p>
+              <p>Few AI-driven systems combine Sinhala learning content with behavioral telemetry, speech evidence, and
+                real-time adaptation in one coherent workflow.</p>
             </article>
             <article class="gap-card reveal" style="transition-delay: 0.1s">
               <div class="gap-icon">🧠</div>
               <h3>Multimodal Evidence Gap</h3>
-              <p>Most systems analyze either behavioral or speech data independently. Fusing interaction patterns, voice analysis, and learning progression into interpretable signals remains underexplored.</p>
+              <p>Most systems analyze either behavioral or speech data independently. Fusing interaction patterns, voice
+                analysis, and learning progression into interpretable signals remains underexplored.</p>
             </article>
             <article class="gap-card reveal" style="transition-delay: 0.2s">
               <div class="gap-icon">🎮</div>
               <h3>Engagement Gap</h3>
-              <p>Clinical assessment interrupts natural learning. A gamified experience that gathers evidence through joyful play while surfacing meaningful indicators is a key unmet need.</p>
+              <p>Clinical assessment interrupts natural learning. A gamified experience that gathers evidence through
+                joyful play while surfacing meaningful indicators is a key unmet need.</p>
             </article>
             <article class="gap-card reveal" style="transition-delay: 0.3s">
               <div class="gap-icon">📊</div>
               <h3>Stakeholder Communication Gap</h3>
-              <p>Parents and specialists have different information needs. Systems rarely provide role-appropriate, transparent summaries with model attribution and confidence levels.</p>
+              <p>Parents and specialists have different information needs. Systems rarely provide role-appropriate,
+                transparent summaries with model attribution and confidence levels.</p>
             </article>
           </div>
         </div>
@@ -164,35 +186,40 @@
           <div class="section-intro reveal">
             <p class="eyebrow">Research Objectives</p>
             <h2>Four objectives <em>guide the work.</em></h2>
-            <p class="section-copy">Each objective addresses a distinct facet of the research question, from engaging young learners to communicating transparent insights.</p>
+            <p class="section-copy">Each objective addresses a distinct facet of the research question, from engaging
+              young learners to communicating transparent insights.</p>
           </div>
           <div class="objectives-grid">
             <div class="obj-card reveal" style="transition-delay: 0s">
               <div class="obj-marker">01</div>
               <div class="obj-body">
                 <h3>Engage through adaptive play</h3>
-                <p>Design focused, developmentally appropriate Sinhala activities with progressive difficulty for Grade 1 learners aged 6–7.</p>
+                <p>Design focused, developmentally appropriate Sinhala activities with progressive difficulty for Grade
+                  1 learners aged 6–7.</p>
               </div>
             </div>
             <div class="obj-card reveal" style="transition-delay: 0.12s">
               <div class="obj-marker">02</div>
               <div class="obj-body">
                 <h3>Capture multimodal signals</h3>
-                <p>Study voice patterns, response timing, interaction behaviors and learning progression across repeated sessions to build rich learner profiles.</p>
+                <p>Study voice patterns, response timing, interaction behaviors and learning progression across repeated
+                  sessions to build rich learner profiles.</p>
               </div>
             </div>
             <div class="obj-card reveal" style="transition-delay: 0.24s">
               <div class="obj-marker">03</div>
               <div class="obj-body">
                 <h3>Fuse and explain patterns</h3>
-                <p>Combine behavioral and speech features into interpretable learner-risk signals using XGBoost with SHAP-based feature attribution.</p>
+                <p>Combine behavioral and speech features into interpretable learner-risk signals using XGBoost with
+                  SHAP-based feature attribution.</p>
               </div>
             </div>
             <div class="obj-card reveal" style="transition-delay: 0.36s">
               <div class="obj-marker">04</div>
               <div class="obj-body">
                 <h3>Adapt and communicate</h3>
-                <p>Adjust task difficulty using item-response modelling and present clear, role-appropriate progress insights to parents and specialists.</p>
+                <p>Adjust task difficulty using item-response modelling and present clear, role-appropriate progress
+                  insights to parents and specialists.</p>
               </div>
             </div>
           </div>
@@ -205,14 +232,30 @@
           <div class="section-intro reveal">
             <p class="eyebrow">Methodology</p>
             <h2>One Ecosystem. <em>Four lenses.</em></h2>
-            <p class="section-copy">Each component answers a different part of the research question. Together they create a continuous path from interaction to interpretable support.</p>
+            <p class="section-copy">Each component answers a different part of the research question. Together they
+              create a continuous path from interaction to interpretable support.</p>
           </div>
           <div class="pipeline reveal">
-            <div class="pipeline-item"><div class="pipe-num">01</div><b>Experience</b><p>Flutter learning activities</p></div>
-            <div class="pipeline-item"><div class="pipe-num">02</div><b>Capture</b><p>Voice + interaction telemetry</p></div>
-            <div class="pipeline-item"><div class="pipe-num">03</div><b>Model</b><p>C1–C4 analytical services</p></div>
-            <div class="pipeline-item"><div class="pipe-num">04</div><b>Respond</b><p>Adaptive task selection</p></div>
-            <div class="pipeline-item"><div class="pipe-num">05</div><b>Communicate</b><p>Parent + specialist insight</p></div>
+            <div class="pipeline-item">
+              <div class="pipe-num">01</div><b>Experience</b>
+              <p>Flutter learning activities</p>
+            </div>
+            <div class="pipeline-item">
+              <div class="pipe-num">02</div><b>Capture</b>
+              <p>Voice + interaction telemetry</p>
+            </div>
+            <div class="pipeline-item">
+              <div class="pipe-num">03</div><b>Model</b>
+              <p>C1–C4 analytical services</p>
+            </div>
+            <div class="pipeline-item">
+              <div class="pipe-num">04</div><b>Respond</b>
+              <p>Adaptive task selection</p>
+            </div>
+            <div class="pipeline-item">
+              <div class="pipe-num">05</div><b>Communicate</b>
+              <p>Parent + specialist insight</p>
+            </div>
           </div>
 
           <div class="component-grid">
@@ -220,28 +263,32 @@
               <div class="component-top"><span>C1</span></div>
               <p class="component-label">Interaction Intelligence</p>
               <h3>Behavioral Telemetry</h3>
-              <p>Captures response latency, first-attempt accuracy, retries, hesitation, touch patterns and fatigue proxies during natural play.</p>
+              <p>Captures response latency, first-attempt accuracy, retries, hesitation, touch patterns and fatigue
+                proxies during natural play.</p>
               <div class="tag-row"><span>Learning Analytics</span><span>Fatigue Proxy</span><span>Telemetry</span></div>
             </article>
             <article class="component-card jade reveal" style="transition-delay: 0.1s">
               <div class="component-top"><span>C2</span></div>
               <p class="component-label">Voice & Fluency</p>
               <h3>Sinhala Speech Monitoring</h3>
-              <p>Studies speech timing, pauses, voice onset, word error rate and acoustic quality across guided Sinhala reading tasks.</p>
+              <p>Studies speech timing, pauses, voice onset, word error rate and acoustic quality across guided Sinhala
+                reading tasks.</p>
               <div class="tag-row"><span>Speech-to-Text</span><span>Acoustics</span><span>Fluency</span></div>
             </article>
             <article class="component-card gold reveal" style="transition-delay: 0.2s">
               <div class="component-top"><span>C3</span></div>
               <p class="component-label">Multimodal Analysis</p>
               <h3>Explainable Pattern Fusion</h3>
-              <p>Combines behavioral and speech features into interpretable learner-pattern signals, with SHAP-based feature attribution.</p>
+              <p>Combines behavioral and speech features into interpretable learner-pattern signals, with SHAP-based
+                feature attribution.</p>
               <div class="tag-row"><span>XGBoost</span><span>SHAP</span><span>Explainable AI</span></div>
             </article>
             <article class="component-card blue reveal" style="transition-delay: 0.3s">
               <div class="component-top"><span>C4</span></div>
               <p class="component-label">Personalized Progression</p>
               <h3>Adaptive Tutoring Engine</h3>
-              <p>Uses item-response modelling and mastery state to select the next task, adjust challenge and introduce scaffolds when needed.</p>
+              <p>Uses item-response modelling and mastery state to select the next task, adjust challenge and introduce
+                scaffolds when needed.</p>
               <div class="tag-row"><span>Rasch / IRT</span><span>Mastery</span><span>Scaffolding</span></div>
             </article>
           </div>
@@ -261,10 +308,26 @@
               <p class="mini-kicker">Design Principles</p>
               <h3>Human-centered by design.</h3>
               <ul>
-                <li><span>01</span><div><b>Progress before labels</b><p>Communicate strengths, needs and change over time.</p></div></li>
-                <li><span>02</span><div><b>Explain the signal</b><p>Expose contributing features and model limitations.</p></div></li>
-                <li><span>03</span><div><b>Minimize the burden</b><p>Gather evidence through normal learning interactions.</p></div></li>
-                <li><span>04</span><div><b>Separate the audiences</b><p>Parents and specialists see role-appropriate information.</p></div></li>
+                <li><span>01</span>
+                  <div><b>Progress before labels</b>
+                    <p>Communicate strengths, needs and change over time.</p>
+                  </div>
+                </li>
+                <li><span>02</span>
+                  <div><b>Explain the signal</b>
+                    <p>Expose contributing features and model limitations.</p>
+                  </div>
+                </li>
+                <li><span>03</span>
+                  <div><b>Minimize the burden</b>
+                    <p>Gather evidence through normal learning interactions.</p>
+                  </div>
+                </li>
+                <li><span>04</span>
+                  <div><b>Separate the audiences</b>
+                    <p>Parents and specialists see role-appropriate information.</p>
+                  </div>
+                </li>
               </ul>
             </article>
           </div>
@@ -277,20 +340,34 @@
           <div class="section-intro reveal">
             <p class="eyebrow">Literature Survey</p>
             <h2>Building on <em>existing knowledge.</em></h2>
-            <p class="section-copy">A synthesis of prior work in educational data mining, adaptive learning, speech analysis and explainable AI for child learning support.</p>
+            <p class="section-copy">A synthesis of prior work in educational data mining, adaptive learning, speech
+              analysis and explainable AI for child learning support.</p>
           </div>
           <div class="literature-content reveal">
-            <p>The field of early learning support has seen growing adoption of AI and behavioral analytics. Initial efforts utilized static assessment tools that evaluated only final answers, missing the rich process data generated during learning interactions.</p>
-            <p>With advances in deep learning and natural language processing, newer systems have begun analyzing speech patterns, interaction timing, and behavioral signals. Transfer learning and multimodal fusion have shown promise for building comprehensive learner profiles, though challenges remain for low-resource languages like Sinhala.</p>
-            <p>For speech monitoring, systems have employed voice onset time analysis, pause detection, and word error rate measurement. Behavioral telemetry approaches capture response latency, retry patterns, hesitation signals, and fatigue proxies during natural interaction.</p>
-            <p>Adaptive learning engines using item-response theory (IRT) and mastery-based progression have demonstrated effectiveness in personalizing difficulty levels. Explainable AI techniques such as SHAP (SHapley Additive exPlanations) enable transparent model decisions, critical for stakeholder trust in educational contexts.</p>
+            <p>The field of early learning support has seen growing adoption of AI and behavioral analytics. Initial
+              efforts utilized static assessment tools that evaluated only final answers, missing the rich process data
+              generated during learning interactions.</p>
+            <p>With advances in deep learning and natural language processing, newer systems have begun analyzing speech
+              patterns, interaction timing, and behavioral signals. Transfer learning and multimodal fusion have shown
+              promise for building comprehensive learner profiles, though challenges remain for low-resource languages
+              like Sinhala.</p>
+            <p>For speech monitoring, systems have employed voice onset time analysis, pause detection, and word error
+              rate measurement. Behavioral telemetry approaches capture response latency, retry patterns, hesitation
+              signals, and fatigue proxies during natural interaction.</p>
+            <p>Adaptive learning engines using item-response theory (IRT) and mastery-based progression have
+              demonstrated effectiveness in personalizing difficulty levels. Explainable AI techniques such as SHAP
+              (SHapley Additive exPlanations) enable transparent model decisions, critical for stakeholder trust in
+              educational contexts.</p>
             <div class="lit-refs">
               <h4>Key References</h4>
               <ol>
-                <li>R. Baker and P. S. Inventado, "Educational Data Mining and Learning Analytics," in Learning Analytics, Springer, 2014.</li>
-                <li>C. Romero and S. Ventura, "Data Mining in Education," WIREs Data Mining and Knowledge Discovery, 2013.</li>
+                <li>R. Baker and P. S. Inventado, "Educational Data Mining and Learning Analytics," in Learning
+                  Analytics, Springer, 2014.</li>
+                <li>C. Romero and S. Ventura, "Data Mining in Education," WIREs Data Mining and Knowledge Discovery,
+                  2013.</li>
                 <li>T. Anderson et al., "Learning Analytics and Educational Data Mining," IRRODL, 2014.</li>
-                <li>D. Rasch, "Probabilistic Models for Intelligence and Attainment Tests," University of Chicago Press, 1960.</li>
+                <li>D. Rasch, "Probabilistic Models for Intelligence and Attainment Tests," University of Chicago Press,
+                  1960.</li>
                 <li>S. Lundberg and S. Lee, "A Unified Approach to Interpreting Model Predictions," NeurIPS, 2017.</li>
               </ol>
             </div>
@@ -306,15 +383,33 @@
             <h2>Powered by <em>modern tools.</em></h2>
           </div>
           <div class="tech-grid">
-            <div class="tech-item reveal" style="transition-delay: 0s"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" loading="lazy" /><span>Python</span></div>
-            <div class="tech-item reveal" style="transition-delay: 0.05s"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" alt="Flutter" loading="lazy" /><span>Flutter</span></div>
-            <div class="tech-item reveal" style="transition-delay: 0.1s"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" alt="FastAPI" loading="lazy" /><span>FastAPI</span></div>
-            <div class="tech-item reveal" style="transition-delay: 0.15s"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB" loading="lazy" /><span>MongoDB</span></div>
-            <div class="tech-item reveal" style="transition-delay: 0.2s"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" alt="TensorFlow" loading="lazy" /><span>TensorFlow</span></div>
-            <div class="tech-item reveal" style="transition-delay: 0.25s"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" loading="lazy" /><span>React</span></div>
-            <div class="tech-item reveal" style="transition-delay: 0.3s"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" alt="Firebase" loading="lazy" /><span>Firebase</span></div>
-            <div class="tech-item reveal" style="transition-delay: 0.35s"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg" alt="Azure" loading="lazy" /><span>Azure</span></div>
-            <div class="tech-item reveal" style="transition-delay: 0.4s"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-original.svg" alt="Dart" loading="lazy" /><span>Dart</span></div>
+            <div class="tech-item reveal" style="transition-delay: 0s"><img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python"
+                loading="lazy" /><span>Python</span></div>
+            <div class="tech-item reveal" style="transition-delay: 0.05s"><img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" alt="Flutter"
+                loading="lazy" /><span>Flutter</span></div>
+            <div class="tech-item reveal" style="transition-delay: 0.1s"><img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" alt="FastAPI"
+                loading="lazy" /><span>FastAPI</span></div>
+            <div class="tech-item reveal" style="transition-delay: 0.15s"><img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB"
+                loading="lazy" /><span>MongoDB</span></div>
+            <div class="tech-item reveal" style="transition-delay: 0.2s"><img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg"
+                alt="TensorFlow" loading="lazy" /><span>TensorFlow</span></div>
+            <div class="tech-item reveal" style="transition-delay: 0.25s"><img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React"
+                loading="lazy" /><span>React</span></div>
+            <div class="tech-item reveal" style="transition-delay: 0.3s"><img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" alt="Firebase"
+                loading="lazy" /><span>Firebase</span></div>
+            <div class="tech-item reveal" style="transition-delay: 0.35s"><img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg" alt="Azure"
+                loading="lazy" /><span>Azure</span></div>
+            <div class="tech-item reveal" style="transition-delay: 0.4s"><img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-original.svg" alt="Dart"
+                loading="lazy" /><span>Dart</span></div>
           </div>
         </div>
       </section>
@@ -325,7 +420,8 @@
           <div class="section-intro reveal">
             <p class="eyebrow">Project Milestones</p>
             <h2>Built in evidence, <em>phase by phase.</em></h2>
-            <p class="section-copy">A timeline of key project milestones, deliverables, and assessments marking the research journey from proposal to final evaluation.</p>
+            <p class="section-copy">A timeline of key project milestones, deliverables, and assessments marking the
+              research journey from proposal to final evaluation.</p>
           </div>
           <div class="milestone-timeline">
             <div class="milestone-item reveal" style="transition-delay: 0s">
@@ -333,7 +429,8 @@
               <div class="milestone-card">
                 <span class="milestone-date">August 2024</span>
                 <h3>Project Proposal</h3>
-                <p>Problem framing, literature review, research gap identification, initial objectives and proposed system architecture.</p>
+                <p>Problem framing, literature review, research gap identification, initial objectives and proposed
+                  system architecture.</p>
                 <div class="milestone-marks">
                   <span>Marks Allocated: 6</span>
                   <div class="marks-bar">
@@ -348,7 +445,8 @@
               <div class="milestone-card">
                 <span class="milestone-date">December 2024</span>
                 <h3>Progress Presentation I</h3>
-                <p>Flutter experience prototype, gamified activity design, synthetic-data models and database foundations.</p>
+                <p>Flutter experience prototype, gamified activity design, synthetic-data models and database
+                  foundations.</p>
                 <div class="milestone-marks">
                   <span>Marks Allocated: 15</span>
                   <div class="marks-bar">
@@ -378,7 +476,8 @@
               <div class="milestone-card">
                 <span class="milestone-date">March 2025</span>
                 <h3>Research Paper</h3>
-                <p>Academic document presenting results from investigation into adaptive learning and behavioral telemetry.</p>
+                <p>Academic document presenting results from investigation into adaptive learning and behavioral
+                  telemetry.</p>
                 <div class="milestone-marks">
                   <span>Marks Allocated: 10</span>
                   <div class="marks-bar">
@@ -393,7 +492,8 @@
               <div class="milestone-card">
                 <span class="milestone-date">May 2025</span>
                 <h3>Final Assessment & Viva</h3>
-                <p>Integrated prototype, parent and specialist dashboards, security review and end-to-end system evaluation.</p>
+                <p>Integrated prototype, parent and specialist dashboards, security review and end-to-end system
+                  evaluation.</p>
                 <div class="milestone-marks">
                   <span>Marks Allocated: 19</span>
                   <div class="marks-bar">
@@ -413,7 +513,8 @@
           <div class="section-intro reveal">
             <p class="eyebrow">Documents</p>
             <h2>The work, <em>documented.</em></h2>
-            <p class="section-copy">All documents related to the academic project. Use the links to view or download submitted files.</p>
+            <p class="section-copy">All documents related to the academic project. Use the links to view or download
+              submitted files.</p>
           </div>
           <div class="resource-grid">
             <article class="resource-card reveal" style="transition-delay: 0s">
@@ -424,8 +525,17 @@
                 <span>Submitted on 2026/01/14</span>
                 <span class="res-type">Group</span>
               </div>
-              <div style="margin-top: 12px">
-                <a href="https://mysliit-my.sharepoint.com/:w:/g/personal/it22267740_my_sliit_lk/IQB5peag0QzNSo39HNdXkc57AV51IZnA_CpytBi38BDuBRc?e=NaYxjv" target="_blank" rel="noopener noreferrer" class="download-link">View ↗</a>
+              <div class="resource-actions">
+                <a href="https://mysliit-my.sharepoint.com/:w:/g/personal/it22267740_my_sliit_lk/IQB5peag0QzNSo39HNdXkc57AV51IZnA_CpytBi38BDuBRc?e=NaYxjv"
+                  target="_blank" rel="noopener noreferrer" class="download-link">View ↗</a>
+                <a href="https://mysliit-my.sharepoint.com/:w:/g/personal/it22267740_my_sliit_lk/IQB5peag0QzNSo39HNdXkc57AV51IZnA_CpytBi38BDuBRc?e=NaYxjv&download=1"
+                  download target="_blank" rel="noopener noreferrer" class="res-btn res-btn-download">
+                  <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M10 3a.75.75 0 01.75.75v8.19l2.72-2.72a.75.75 0 111.06 1.06l-4 4a.75.75 0 01-1.06 0l-4-4a.75.75 0 111.06-1.06l2.72 2.72V3.75A.75.75 0 0110 3z" clip-rule="evenodd"/>
+                    <path d="M3.75 15.5a.75.75 0 000 1.5h12.5a.75.75 0 000-1.5H3.75z"/>
+                  </svg>
+                  <span>Download</span>
+                </a>
               </div>
             </article>
             <article class="resource-card reveal" style="transition-delay: 0.08s">
@@ -436,32 +546,61 @@
                 <span>Submitted on 2026/03/15</span>
                 <span class="res-type">Individual</span>
               </div>
-              <div style="margin-top: 12px">
-                <a href="https://mysliit-my.sharepoint.com/:f:/g/personal/it22267740_my_sliit_lk/IgAgTqHebKT7Rqlq1MQYW1RrAboyF2baaNZlGG2BY-2j_uQ?e=l7GWgL" target="_blank" rel="noopener noreferrer" class="download-link">View ↗</a>
+              <div class="resource-actions">
+                <a href="https://mysliit-my.sharepoint.com/:f:/g/personal/it22267740_my_sliit_lk/IgAgTqHebKT7Rqlq1MQYW1RrAboyF2baaNZlGG2BY-2j_uQ?e=l7GWgL"
+                  target="_blank" rel="noopener noreferrer" class="download-link">View ↗</a>
+                <a href="https://mysliit-my.sharepoint.com/:f:/g/personal/it22267740_my_sliit_lk/IgAgTqHebKT7Rqlq1MQYW1RrAboyF2baaNZlGG2BY-2j_uQ?e=l7GWgL&download=1"
+                  download target="_blank" rel="noopener noreferrer" class="res-btn res-btn-download">
+                  <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M10 3a.75.75 0 01.75.75v8.19l2.72-2.72a.75.75 0 111.06 1.06l-4 4a.75.75 0 01-1.06 0l-4-4a.75.75 0 111.06-1.06l2.72 2.72V3.75A.75.75 0 0110 3z" clip-rule="evenodd"/>
+                    <path d="M3.75 15.5a.75.75 0 000 1.5h12.5a.75.75 0 000-1.5H3.75z"/>
+                  </svg>
+                  <span>Download</span>
+                </a>
               </div>
             </article>
             <article class="resource-card reveal" style="transition-delay: 0.16s">
               <span class="file-badge">📄 PDF</span>
               <h3>Final Thesis Document</h3>
-              <p class="res-desc">Comprehensive group dissertation documenting end-to-end research, architecture, and results.</p>
+              <p class="res-desc">Comprehensive group dissertation documenting end-to-end research, architecture, and
+                results.</p>
               <div class="res-meta">
                 <span>Submitted on 2026/10/11</span>
                 <span class="res-type">Group</span>
               </div>
-              <div style="margin-top: 12px">
-                <a href="https://mysliit-my.sharepoint.com/:b:/g/personal/it22267740_my_sliit_lk/IQCjX045XYEdTqeuANk6pWlUAayxiWhbmuVqfyriPO-umPI?e=WqxEDS" target="_blank" rel="noopener noreferrer" class="download-link">View ↗</a>
+              <div class="resource-actions">
+                <a href="https://mysliit-my.sharepoint.com/:b:/g/personal/it22267740_my_sliit_lk/IQCjX045XYEdTqeuANk6pWlUAayxiWhbmuVqfyriPO-umPI?e=WqxEDS"
+                  target="_blank" rel="noopener noreferrer" class="download-link">View ↗</a>
+                <a href="https://mysliit-my.sharepoint.com/:b:/g/personal/it22267740_my_sliit_lk/IQCjX045XYEdTqeuANk6pWlUAayxiWhbmuVqfyriPO-umPI?e=WqxEDS&download=1"
+                  download target="_blank" rel="noopener noreferrer" class="res-btn res-btn-download">
+                  <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M10 3a.75.75 0 01.75.75v8.19l2.72-2.72a.75.75 0 111.06 1.06l-4 4a.75.75 0 01-1.06 0l-4-4a.75.75 0 111.06-1.06l2.72 2.72V3.75A.75.75 0 0110 3z" clip-rule="evenodd"/>
+                    <path d="M3.75 15.5a.75.75 0 000 1.5h12.5a.75.75 0 000-1.5H3.75z"/>
+                  </svg>
+                  <span>Download</span>
+                </a>
               </div>
             </article>
             <article class="resource-card reveal" style="transition-delay: 0.24s">
               <span class="file-badge">📄 PDF</span>
               <h3>Individual Thesis Documents</h3>
-              <p class="res-desc">Individual research thesis reports covering component design, methodology, and evaluation.</p>
+              <p class="res-desc">Individual research thesis reports covering component design, methodology, and
+                evaluation.</p>
               <div class="res-meta">
                 <span>Submitted on 2026/10/11</span>
                 <span class="res-type">Individual</span>
               </div>
-              <div style="margin-top: 12px">
-                <a href="https://mysliit-my.sharepoint.com/:f:/g/personal/it22267740_my_sliit_lk/IgCpcXoyTFG_TJOUavI2seJcAYms7GG7HllKESjmchGvwTU?e=a9hTAI" target="_blank" rel="noopener noreferrer" class="download-link">View ↗</a>
+              <div class="resource-actions">
+                <a href="https://mysliit-my.sharepoint.com/:f:/g/personal/it22267740_my_sliit_lk/IgCpcXoyTFG_TJOUavI2seJcAYms7GG7HllKESjmchGvwTU?e=a9hTAI"
+                  target="_blank" rel="noopener noreferrer" class="download-link">View ↗</a>
+                <a href="https://mysliit-my.sharepoint.com/:f:/g/personal/it22267740_my_sliit_lk/IgCpcXoyTFG_TJOUavI2seJcAYms7GG7HllKESjmchGvwTU?e=a9hTAI&download=1"
+                  download target="_blank" rel="noopener noreferrer" class="res-btn res-btn-download">
+                  <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M10 3a.75.75 0 01.75.75v8.19l2.72-2.72a.75.75 0 111.06 1.06l-4 4a.75.75 0 01-1.06 0l-4-4a.75.75 0 111.06-1.06l2.72 2.72V3.75A.75.75 0 0110 3z" clip-rule="evenodd"/>
+                    <path d="M3.75 15.5a.75.75 0 000 1.5h12.5a.75.75 0 000-1.5H3.75z"/>
+                  </svg>
+                  <span>Download</span>
+                </a>
               </div>
             </article>
             <article class="resource-card reveal" style="transition-delay: 0.32s">
@@ -472,8 +611,17 @@
                 <span>Submitted on 2026/09/04</span>
                 <span class="res-type">Group</span>
               </div>
-              <div style="margin-top: 12px">
-                <a href="https://mysliit-my.sharepoint.com/:b:/g/personal/it22267740_my_sliit_lk/IQDEtt6WiGcbSKW8aTmj5FQvAQiWuszGj2JtckT-Tx65bc4?e=HMkq8L" target="_blank" rel="noopener noreferrer" class="download-link">View ↗</a>
+              <div class="resource-actions">
+                <a href="https://mysliit-my.sharepoint.com/:b:/g/personal/it22267740_my_sliit_lk/IQDEtt6WiGcbSKW8aTmj5FQvAQiWuszGj2JtckT-Tx65bc4?e=HMkq8L"
+                  target="_blank" rel="noopener noreferrer" class="download-link">View ↗</a>
+                <a href="https://mysliit-my.sharepoint.com/:b:/g/personal/it22267740_my_sliit_lk/IQDEtt6WiGcbSKW8aTmj5FQvAQiWuszGj2JtckT-Tx65bc4?e=HMkq8L&download=1"
+                  download target="_blank" rel="noopener noreferrer" class="res-btn res-btn-download">
+                  <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M10 3a.75.75 0 01.75.75v8.19l2.72-2.72a.75.75 0 111.06 1.06l-4 4a.75.75 0 01-1.06 0l-4-4a.75.75 0 111.06-1.06l2.72 2.72V3.75A.75.75 0 0110 3z" clip-rule="evenodd"/>
+                    <path d="M3.75 15.5a.75.75 0 000 1.5h12.5a.75.75 0 000-1.5H3.75z"/>
+                  </svg>
+                  <span>Download</span>
+                </a>
               </div>
             </article>
           </div>
@@ -497,20 +645,39 @@
                 <span>Submitted on 2026/03/15</span>
                 <span class="res-type">Group</span>
               </div>
-              <div style="margin-top: 12px">
-                <a href="https://mysliit-my.sharepoint.com/:p:/g/personal/it22267740_my_sliit_lk/IQBMWFx3_Gg5RqvTqaWXBLKiAWAb51E9RMpFp-cTBLoHRgA?e=ACVcvn" target="_blank" rel="noopener noreferrer" class="download-link">View ↗</a>
+              <div class="resource-actions">
+                <a href="https://mysliit-my.sharepoint.com/:p:/g/personal/it22267740_my_sliit_lk/IQBMWFx3_Gg5RqvTqaWXBLKiAWAb51E9RMpFp-cTBLoHRgA?e=ACVcvn"
+                  target="_blank" rel="noopener noreferrer" class="download-link">View ↗</a>
+                <a href="https://mysliit-my.sharepoint.com/:p:/g/personal/it22267740_my_sliit_lk/IQBMWFx3_Gg5RqvTqaWXBLKiAWAb51E9RMpFp-cTBLoHRgA?e=ACVcvn&download=1"
+                  download target="_blank" rel="noopener noreferrer" class="res-btn res-btn-download">
+                  <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M10 3a.75.75 0 01.75.75v8.19l2.72-2.72a.75.75 0 111.06 1.06l-4 4a.75.75 0 01-1.06 0l-4-4a.75.75 0 111.06-1.06l2.72 2.72V3.75A.75.75 0 0110 3z" clip-rule="evenodd"/>
+                    <path d="M3.75 15.5a.75.75 0 000 1.5h12.5a.75.75 0 000-1.5H3.75z"/>
+                  </svg>
+                  <span>Download</span>
+                </a>
               </div>
             </article>
             <article class="resource-card reveal" style="transition-delay: 0.08s">
               <span class="file-badge">🎞️ SLIDES</span>
               <h3>Progress Presentation I</h3>
-              <p class="res-desc">Presents approximately 50% completion, showcasing key features and received feedback.</p>
+              <p class="res-desc">Presents approximately 50% completion, showcasing key features and received feedback.
+              </p>
               <div class="res-meta">
                 <span>Submitted on 2026/05/11</span>
                 <span class="res-type">Group</span>
               </div>
-              <div style="margin-top: 12px">
-                <a href="https://mysliit-my.sharepoint.com/:p:/g/personal/it22267740_my_sliit_lk/IQBYFPWwMWawQbCOCo_7IH4fAZzE7aeE0igbr6bsOitHtgk?e=jpC3ZB" target="_blank" rel="noopener noreferrer" class="download-link">View ↗</a>
+              <div class="resource-actions">
+                <a href="https://mysliit-my.sharepoint.com/:p:/g/personal/it22267740_my_sliit_lk/IQBYFPWwMWawQbCOCo_7IH4fAZzE7aeE0igbr6bsOitHtgk?e=jpC3ZB"
+                  target="_blank" rel="noopener noreferrer" class="download-link">View ↗</a>
+                <a href="https://mysliit-my.sharepoint.com/:p:/g/personal/it22267740_my_sliit_lk/IQBYFPWwMWawQbCOCo_7IH4fAZzE7aeE0igbr6bsOitHtgk?e=jpC3ZB&download=1"
+                  download target="_blank" rel="noopener noreferrer" class="res-btn res-btn-download">
+                  <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M10 3a.75.75 0 01.75.75v8.19l2.72-2.72a.75.75 0 111.06 1.06l-4 4a.75.75 0 01-1.06 0l-4-4a.75.75 0 111.06-1.06l2.72 2.72V3.75A.75.75 0 0110 3z" clip-rule="evenodd"/>
+                    <path d="M3.75 15.5a.75.75 0 000 1.5h12.5a.75.75 0 000-1.5H3.75z"/>
+                  </svg>
+                  <span>Download</span>
+                </a>
               </div>
             </article>
             <article class="resource-card reveal" style="transition-delay: 0.16s">
@@ -521,23 +688,39 @@
                 <span>Submitted on 2026/08/31</span>
                 <span class="res-type">Group</span>
               </div>
-              <div style="margin-top: 12px">
-                <a href="https://mysliit-my.sharepoint.com/:p:/g/personal/it22267740_my_sliit_lk/IQBIeToH_bqVT4qGGTDDoDrOAUB2P7OaxDEg85Z81WNsXZs?e=FmMxwK" target="_blank" rel="noopener noreferrer" class="download-link">View ↗</a>
+              <div class="resource-actions">
+                <a href="https://mysliit-my.sharepoint.com/:p:/g/personal/it22267740_my_sliit_lk/IQBIeToH_bqVT4qGGTDDoDrOAUB2P7OaxDEg85Z81WNsXZs?e=FmMxwK"
+                  target="_blank" rel="noopener noreferrer" class="download-link">View ↗</a>
+                <a href="https://mysliit-my.sharepoint.com/:p:/g/personal/it22267740_my_sliit_lk/IQBIeToH_bqVT4qGGTDDoDrOAUB2P7OaxDEg85Z81WNsXZs?e=FmMxwK&download=1"
+                  download target="_blank" rel="noopener noreferrer" class="res-btn res-btn-download">
+                  <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M10 3a.75.75 0 01.75.75v8.19l2.72-2.72a.75.75 0 111.06 1.06l-4 4a.75.75 0 01-1.06 0l-4-4a.75.75 0 111.06-1.06l2.72 2.72V3.75A.75.75 0 0110 3z" clip-rule="evenodd"/>
+                    <path d="M3.75 15.5a.75.75 0 000 1.5h12.5a.75.75 0 000-1.5H3.75z"/>
+                  </svg>
+                  <span>Download</span>
+                </a>
               </div>
             </article>
             <article class="resource-card reveal" style="transition-delay: 0.24s">
               <span class="file-badge">🎞️ SLIDES</span>
               <h3>Final Presentation</h3>
-              <p class="res-desc">Final project delivery with system demo, research findings, and overall conclusions.</p>
+              <p class="res-desc">Final project delivery with system demo, research findings, and overall conclusions.
+              </p>
               <div class="res-meta">
-                <span>Upcoming</span>
+                <span>Submitted on 2026/10/21</span>
                 <span class="res-type">Group</span>
               </div>
-              <div style="margin-top: 12px">
-                <span class="pending-badge">
-                  <span class="pending-dot"></span>
-                  Pending
-                </span>
+              <div class="resource-actions">
+                <a href="https://mysliit-my.sharepoint.com/:p:/g/personal/it22267740_my_sliit_lk/IQBF1t3dkHExSZbWMzHB1BaOAbmUav95H5e3SeXdU9s1zRc?e=i0IdzG"
+                  target="_blank" rel="noopener noreferrer" class="download-link">View ↗</a>
+                <a href="https://mysliit-my.sharepoint.com/:p:/g/personal/it22267740_my_sliit_lk/IQBF1t3dkHExSZbWMzHB1BaOAbmUav95H5e3SeXdU9s1zRc?e=i0IdzG&download=1"
+                  download target="_blank" rel="noopener noreferrer" class="res-btn res-btn-download">
+                  <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M10 3a.75.75 0 01.75.75v8.19l2.72-2.72a.75.75 0 111.06 1.06l-4 4a.75.75 0 01-1.06 0l-4-4a.75.75 0 111.06-1.06l2.72 2.72V3.75A.75.75 0 0110 3z" clip-rule="evenodd"/>
+                    <path d="M3.75 15.5a.75.75 0 000 1.5h12.5a.75.75 0 000-1.5H3.75z"/>
+                  </svg>
+                  <span>Download</span>
+                </a>
               </div>
             </article>
           </div>
@@ -550,26 +733,29 @@
           <div class="section-intro reveal">
             <p class="eyebrow">About Us</p>
             <h2>Meet our <em>team.</em></h2>
-            <p class="section-copy">Software Engineering undergraduates at SLIIT, working across human-centered design, data engineering, machine learning and mobile development.</p>
+            <p class="section-copy">Software Engineering undergraduates at SLIIT, working across human-centered design,
+              data engineering, machine learning and mobile development.</p>
           </div>
-          
+
           <h3 class="team-sub-heading reveal">Supervisors</h3>
           <div class="supervisor-showcase" style="margin-bottom: 56px">
             <article class="supervisor-card supervisor-main reveal" style="transition-delay: 0s">
               <div class="supervisor-card-glow"></div>
               <div class="supervisor-photo-wrapper">
                 <div class="supervisor-photo-ring"></div>
-                <img src="./images/team/supervisor.jpg" alt="Ms. Thilini Jayalath" class="supervisor-photo" loading="lazy" />
+                <img src="./images/team/supervisor.jpg" alt="Ms. Thilini Jayalath" class="supervisor-photo"
+                  loading="lazy" />
                 <div class="supervisor-photo-overlay"></div>
               </div>
               <div class="supervisor-info">
                 <span class="supervisor-badge badge-primary">★ Supervisor</span>
                 <h3>Ms. Thilini Jayalath</h3>
-                 <p class="supervisor-institution">SLIIT</p>
+                <p class="supervisor-institution">SLIIT</p>
                 <p class="supervisor-dept">Department of <em>Software Engineering</em></p>
                 <div class="team-links">
                   <a href="mailto:thilini.j@sliit.lk" class="email-link">Email</a>
-                  <a href="https://www.linkedin.com/in/thilini-jayalath-2815b4b0/" target="_blank" rel="noopener noreferrer" class="linkedin-link">LinkedIn</a>
+                  <a href="https://www.linkedin.com/in/thilini-jayalath-2815b4b0/" target="_blank"
+                    rel="noopener noreferrer" class="linkedin-link">LinkedIn</a>
                 </div>
               </div>
             </article>
@@ -577,7 +763,8 @@
               <div class="supervisor-card-glow"></div>
               <div class="supervisor-photo-wrapper">
                 <div class="supervisor-photo-ring"></div>
-                <img src="./images/team/co-supervisor.jpg" alt="Ms. Hansi De Silva" class="supervisor-photo" loading="lazy" />
+                <img src="./images/team/co-supervisor.jpg" alt="Ms. Hansi De Silva" class="supervisor-photo"
+                  loading="lazy" />
                 <div class="supervisor-photo-overlay"></div>
               </div>
               <div class="supervisor-info">
@@ -587,7 +774,8 @@
                 <p class="supervisor-dept">Department of <em>Software Engineering</em></p>
                 <div class="team-links">
                   <a href="mailto:hansi.d@sliit.lk" class="email-link">Email</a>
-                  <a href="https://www.linkedin.com/in/hansi-de-silva-03629b79/" target="_blank" rel="noopener noreferrer" class="linkedin-link">LinkedIn</a>
+                  <a href="https://www.linkedin.com/in/hansi-de-silva-03629b79/" target="_blank"
+                    rel="noopener noreferrer" class="linkedin-link">LinkedIn</a>
                 </div>
               </div>
             </article>
@@ -605,10 +793,12 @@
                 <span class="student-badge badge-leader">★ Team Leader</span>
                 <h3>R.K.R.M.S.K Gunasena</h3>
                 <p class="student-component">C1 — Speech Monitoring</p>
-                <p class="student-institution">SLIIT — Faculty of Computing<br />Department: <em>Software Engineering</em></p>
+                <p class="student-institution">SLIIT — Faculty of Computing<br />Department: <em>Software
+                    Engineering</em></p>
                 <div class="team-links">
                   <a href="mailto:kavindugunasena@gmail.com" class="email-link">Email</a>
-                  <a href="https://www.linkedin.com/in/sasmithakg/" target="_blank" rel="noopener noreferrer" class="linkedin-link">LinkedIn</a>
+                  <a href="https://www.linkedin.com/in/sasmithakg/" target="_blank" rel="noopener noreferrer"
+                    class="linkedin-link">LinkedIn</a>
                 </div>
               </div>
             </article>
@@ -622,10 +812,12 @@
                 <span class="student-badge badge-member">Team Member</span>
                 <h3>K.D.M.D Perera</h3>
                 <p class="student-component">C2 — Behavioral Telemetry</p>
-                <p class="student-institution">SLIIT — Faculty of Computing<br />Department: <em>Software Engineering</em></p>
+                <p class="student-institution">SLIIT — Faculty of Computing<br />Department: <em>Software
+                    Engineering</em></p>
                 <div class="team-links">
-                  <a href="mailto:it22642882@my.sliit.lk" class="email-link">Email</a>
-                  <a href="https://www.linkedin.com/in/dinithi-perera00/" target="_blank" rel="noopener noreferrer" class="linkedin-link">LinkedIn</a>
+                  <a href="mailto:pereradinithi66@gmail.com" class="email-link">Email</a>
+                  <a href="https://www.linkedin.com/in/dinithi-perera00/" target="_blank" rel="noopener noreferrer"
+                    class="linkedin-link">LinkedIn</a>
                 </div>
               </div>
             </article>
@@ -639,10 +831,12 @@
                 <span class="student-badge badge-member">Team Member</span>
                 <h3>K.T Olivea</h3>
                 <p class="student-component">C3 — Diagnostic Fusion</p>
-                <p class="student-institution">SLIIT — Faculty of Computing<br />Department: <em>Software Engineering</em></p>
+                <p class="student-institution">SLIIT — Faculty of Computing<br />Department: <em>Software
+                    Engineering</em></p>
                 <div class="team-links">
                   <a href="mailto:tursholivea@gmail.com" class="email-link">Email</a>
-                  <a href="https://www.linkedin.com/in/oliveasegaram" target="_blank" rel="noopener noreferrer" class="linkedin-link">LinkedIn</a>
+                  <a href="https://www.linkedin.com/in/oliveasegaram" target="_blank" rel="noopener noreferrer"
+                    class="linkedin-link">LinkedIn</a>
                 </div>
               </div>
             </article>
@@ -656,10 +850,12 @@
                 <span class="student-badge badge-member">Team Member</span>
                 <h3>E.M.I.S Ekanayake</h3>
                 <p class="student-component">C4 — Adaptive Tutoring</p>
-                <p class="student-institution">SLIIT — Faculty of Computing<br />Department: <em>Software Engineering</em></p>
+                <p class="student-institution">SLIIT — Faculty of Computing<br />Department: <em>Software
+                    Engineering</em></p>
                 <div class="team-links">
                   <a href="mailto:isaraekanayake123@gmail.com" class="email-link">Email</a>
-                  <a href="https://www.linkedin.com/in/isara-ekanayake-78b562318" target="_blank" rel="noopener noreferrer" class="linkedin-link">LinkedIn</a>
+                  <a href="https://www.linkedin.com/in/isara-ekanayake-78b562318" target="_blank"
+                    rel="noopener noreferrer" class="linkedin-link">LinkedIn</a>
                 </div>
               </div>
             </article>
@@ -728,8 +924,10 @@
                 <textarea required name="message" rows="5" placeholder="Tell us about your enquiry…" maxlength="5000"></textarea>
               </label>
               <button class="btn-primary btn-submit" type="submit">
-                Send Message 
-                <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11M11 5l5 5-5 5" /></svg>
+                Send Message
+                <svg viewBox="0 0 20 20" aria-hidden="true">
+                  <path d="M4 10h11M11 5l5 5-5 5" />
+                </svg>
               </button>
               <div id="form-status-msg" class="form-status" role="status" aria-live="polite" hidden>
               </div>
@@ -854,14 +1052,14 @@
 
     // Scroll spy for active nav link
     document.addEventListener('DOMContentLoaded', () => {
-      const navItems = ["hero","domain","milestones","documents","presentations","team","contact"];
+      const navItems = ["hero", "domain", "milestones", "documents", "presentations", "team", "contact"];
       const sections = navItems.map(id => document.getElementById(id)).filter(Boolean);
-      
+
       const spyObserver = new IntersectionObserver((entries) => {
         const visible = entries
           .filter(e => e.isIntersecting)
           .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
-        
+
         if (visible) {
           navItems.forEach(id => {
             const link = document.getElementById('nav-' + id);
@@ -875,9 +1073,10 @@
           });
         }
       }, { rootMargin: '-30% 0px -60% 0px', threshold: [0.05, 0.2, 0.5] });
-      
+
       sections.forEach(s => spyObserver.observe(s));
     });
   </script>
 </body>
+
 </html>
